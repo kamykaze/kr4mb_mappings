@@ -54,7 +54,7 @@ or
 
 4b. Copy the contents of the private.xml to the top of your private.xml
 
-<pre>
+<code>
     <item>
         <name>Custom Mappings</name>
         <include path="mappings/one_handed.xml" />
@@ -63,4 +63,4 @@ or
         <include path="mappings/cursor.xml" />
         <include path="mappings/spaces.xml" />
     </item>
-</pre>
+</code>
