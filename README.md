@@ -1,7 +1,7 @@
 KeyRemap4MacBook Mappings
 =========================
 
-This project contains remapping files for KeyRemap4MacBook.
+This project contains remapping files for [KeyRemap4MacBook](https://github.com/tekezo/KeyRemap4MacBook/)
 
 KeyRemap4MacBook is a powerful utility for keyboard customization that utilizes
 xml files to add custom keyboard mappings.
@@ -20,3 +20,47 @@ KeyRemap4MacBook 8.0.0 or later
 
 see KeyRemap4MacBook for other requirements
 
+How to Setup
+------------
+There's no installation necessary, but here are some instructions on how to get 
+these mappings to show up on KeyRemap4MacBook:
+
+1. Get the repo by cloning it to a location of your choice
+
+<pre>
+git clone git@github.com:kamykaze/kr4mb\_mappings.git
+</pre>
+
+2. Go into KeyRemap4MacBook's private.xml location
+
+<pre>
+cd ~/Library/Application\ Support/KeyRemap4MacBook
+</pre>
+
+3. Symlink the mappings folder
+
+<pre>
+ln -s <PATH_TO_KR4MB>/mappings
+</pre>
+
+4a. If you don't have other customizations in your private.xml file, feel free to 
+symlink the private.xml as well
+
+<pre>
+ln -s <PATH_TO_KR4MB>/private.xml
+</pre>
+
+or
+
+4b. Copy the contents of the private.xml to the top of your private.xml
+
+<pre>
+    <item>
+        <name>Custom Mappings</name>
+        <include path="mappings/one_handed.xml" />
+        <include path="mappings/numkeys.xml" />
+        <include path="mappings/window_sizing.xml" />
+        <include path="mappings/cursor.xml" />
+        <include path="mappings/spaces.xml" />
+    </item>
+</pre>
