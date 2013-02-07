@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+<root>
+    <item>
+        <name>Use Virtual Cursor Keys</name>
+        <item>
+            <name>VI Mode Cursor Keys (HJKL)</name>
+            <identifier vk_config="true">notsave.virtual_cursorkeys_hjkl</identifier>
+            <autogen>--ShowStatusMessage-- Virtual Cursor Keys</autogen>
+            <autogen>--KeyToKey-- KeyCode::H,         KeyCode::CURSOR_LEFT</autogen>
+            <autogen>--KeyToKey-- KeyCode::J,         KeyCode::CURSOR_DOWN</autogen>
+            <autogen>--KeyToKey-- KeyCode::K,         KeyCode::CURSOR_UP</autogen>
+            <autogen>--KeyToKey-- KeyCode::L,         KeyCode::CURSOR_RIGHT</autogen>
+        </item>
+        <item>
+            <name>Hold key to use Virtual Cursor Keys</name>
+            <appendix>Hold a modifier key while pressing the letter keys to get the cursor keys.</appendix>
+            <appendix>This is useful for navigating without having to swith modes.</appendix>
+            <item>
+                <name>Simultaneous Key Presses [Q+W] to turn on Virtual Cursor Keys</name>
+                <identifier>private.simultaneouskeypresses_virtual_cursorkeys_mode_QW</identifier>
+                <autogen>--SimultaneousKeyPresses--
+                    KeyCode::Q, KeyCode::W, ModifierFlag::NONE, 
+                    KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_virtual_cursorkeys_hjkl
+                </autogen>
+            </item>
+            <item>
+                <name>Simultaneous Key Presses [W+E] to turn on Virtual Cursor Keys</name>
+                <identifier>private.simultaneouskeypresses_virtual_cursorkeys_mode_WE</identifier>
+                <autogen>--SimultaneousKeyPresses--
+                    KeyCode::W, KeyCode::E, ModifierFlag::NONE, 
+                    KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_virtual_cursorkeys_hjkl
+                </autogen>
+            </item>
+            <item>
+                <name>Simultaneous Key Presses [E+R] to turn on Virtual Cursor Keys</name>
+                <identifier>private.simultaneouskeypresses_virtual_cursorkeys_mode_ER</identifier>
+                <autogen>--SimultaneousKeyPresses--
+                    KeyCode::E, KeyCode::R, ModifierFlag::NONE, 
+                    KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_virtual_cursorkeys_hjkl
+                </autogen>
+            </item>
+            <item>
+                <name>Simultaneous Key Presses [A+S] to turn on Virtual Cursor Keys</name>
+                <identifier>private.simultaneouskeypresses_virtual_cursorkeys_mode_AS</identifier>
+                <autogen>--SimultaneousKeyPresses--
+                    KeyCode::A, KeyCode::S, ModifierFlag::NONE,
+                    KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_virtual_cursorkeys_hjkl
+                </autogen>
+            </item>
+            <item>
+                <name>Simultaneous Key Presses [S+D] to turn on Virtual Cursor Keys</name>
+                <identifier>private.simultaneouskeypresses_virtual_cursorkeys_mode_SD</identifier>
+                <autogen>--SimultaneousKeyPresses--
+                    KeyCode::S, KeyCode::D, ModifierFlag::NONE,
+                    KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_virtual_cursorkeys_hjkl
+                </autogen>
+            </item>
+            <item>
+                <name>Simultaneous Key Presses [D+F] to turn on Virtual Cursor Keys</name>
+                <identifier>private.simultaneouskeypresses_virtual_cursorkeys_mode_DF</identifier>
+                <autogen>--SimultaneousKeyPresses--
+                    KeyCode::D, KeyCode::F, ModifierFlag::NONE,
+                    KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_virtual_cursorkeys_hjkl
+                </autogen>
+            </item>
+            <item>
+                <name>Simultaneous Key Presses [Z+X] to turn on Virtual Cursor Keys</name>
+                <identifier>private.simultaneouskeypresses_virtual_cursorkeys_mode_ZX</identifier>
+                <autogen>--SimultaneousKeyPresses--
+                    KeyCode::Z, KeyCode::X, ModifierFlag::NONE,
+                    KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_virtual_cursorkeys_hjkl
+                </autogen>
+            </item>
+            <item>
+                <name>Simultaneous Key Presses [X+C] to turn on Virtual Cursor Keys</name>
+                <identifier>private.simultaneouskeypresses_virtual_cursorkeys_mode_XC</identifier>
+                <autogen>--SimultaneousKeyPresses--
+                    KeyCode::X, KeyCode::C, ModifierFlag::NONE,
+                    KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_virtual_cursorkeys_hjkl
+                </autogen>
+            </item>
+            <item>
+                <name>Simultaneous Key Presses [C+V] to turn on Virtual Cursor Keys</name>
+                <identifier>private.simultaneouskeypresses_virtual_cursorkeys_mode_CV</identifier>
+                <autogen>--SimultaneousKeyPresses--
+                    KeyCode::C, KeyCode::V, ModifierFlag::NONE,
+                    KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_virtual_cursorkeys_hjkl
+                </autogen>
+            </item>
+        </item>
+        <item>
+            <name>Toggle Cursor Keys</name>
+            <appendix>Use a key/combination to toggle the Virtual Cursor Keys. Once enabled,</appendix>
+            <appendix>pressing the letter keys will be remapped to the arrow keys.</appendix>
+            <item>
+                <name>Press FN+C to toggle "Virtual Cursor Keys"</name>
+                <identifier>private.fn_c_to_virtual_cursorkeys_HJKL</identifier>
+                <autogen>--KeyToKey-- KeyCode::C, ModifierFlag::FN, KeyCode::VK_CONFIG_TOGGLE_notsave_virtual_cursorkeys_hjkl</autogen>
+            </item>
+            <item>
+                <name>Press FN+SHIFT_L+C to toggle "Virtual Cursor Keys"</name>
+                <identifier>private.fn_sfhit_c_to_virtual_cursorkeys_HJKL</identifier>
+                <autogen>--KeyToKey-- KeyCode::C, ModifierFlag::FN | ModifierFlag::SHIFT_L, KeyCode::VK_CONFIG_TOGGLE_notsave_virtual_cursorkeys_hjkl</autogen>
+            </item>
+        </item>
+        <item>
+            <name>Disable standard cursor keys</name>
+            <appendix>This mapping is useful if you're trying to get used to the Virtual Cursor Keys.</appendix>
+            <appendix>It makes the standard arrow keys useless.</appendix>
+            <identifier>private.disable_regular_cursorkeys</identifier>
+            <autogen>--KeyToKey-- KeyCode::CURSOR_UP, ModifierFlag::NONE, KeyCode::VK_NONE</autogen>
+            <autogen>--KeyToKey-- KeyCode::CURSOR_DOWN, ModifierFlag::NONE, KeyCode::VK_NONE</autogen>
+            <autogen>--KeyToKey-- KeyCode::CURSOR_LEFT, ModifierFlag::NONE, KeyCode::VK_NONE</autogen>
+            <autogen>--KeyToKey-- KeyCode::CURSOR_RIGHT, ModifierFlag::NONE, KeyCode::VK_NONE</autogen>
+        </item>
+    </item>
+</root>

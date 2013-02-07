@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<root>
+    <item>
+        <name>Spaces/Desktop Mappings</name>
+        <item>
+            <name>Spaces Mode</name>
+            <appendix>The "Spaces Mode" is a mode that allows you to quickly switch spaces (desktops</appendix>
+            <appendix>in Mountain Lion) and use Mission Control without leaving reaching with your fingers.</appendix>
+            <appendix>U I O &#8594; App Windows  Mission Control Dashboard</appendix>
+            <appendix>J K L &#8594; Previous Space    Desktop    Next Space</appendix>
+            <identifier vk_config="true">notsave.active_spacesmode_k</identifier>
+            <autogen>--ShowStatusMessage-- Spaces Mode</autogen>
+            <autogen>--KeyToKey-- KeyCode::U,         KeyCode::CURSOR_DOWN, ModifierFlag::CONTROL_L</autogen>
+            <autogen>--KeyToKey-- KeyCode::I,         KeyCode::MISSION_CONTROL</autogen>
+            <autogen>--KeyToKey-- KeyCode::O,         KeyCode::DASHBOARD</autogen>
+            <autogen>--KeyToKey-- KeyCode::J,         KeyCode::CURSOR_LEFT, ModifierFlag::CONTROL_L</autogen>
+            <autogen>--KeyToKey-- KeyCode::K,         KeyCode::F12, ModifierFlag::NONE</autogen>
+            <autogen>--KeyToKey-- KeyCode::L,         KeyCode::CURSOR_RIGHT, ModifierFlag::CONTROL_L</autogen>
+        </item>
+        <item>
+            <name>Hold key to use Spaces Mode</name>
+            <appendix>Hold two keys to active Spaces Mode, then press the shortcut key.</appendix>
+            <item>
+                <name>Simultaneous Key Presses [Q+W] to turn on Spaces Mode</name>
+                <identifier>private.simultaneouskeypresses_spaces_mode_QW</identifier>
+                <autogen>--SimultaneousKeyPresses--
+                    KeyCode::Q, KeyCode::W, ModifierFlag::NONE, 
+                    KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_active_spacesmode_k
+                </autogen>
+            </item>
+            <item>
+                <name>Simultaneous Key Presses [W+E] to turn on Spaces Mode</name>
+                <identifier>private.simultaneouskeypresses_spaces_mode_WE</identifier>
+                <autogen>--SimultaneousKeyPresses--
+                    KeyCode::W, KeyCode::E, ModifierFlag::NONE, 
+                    KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_active_spacesmode_k
+                </autogen>
+            </item>
+            <item>
+                <name>Simultaneous Key Presses [E+R] to turn on Spaces Mode</name>
+                <identifier>private.simultaneouskeypresses_spaces_mode_ER</identifier>
+                <autogen>--SimultaneousKeyPresses--
+                    KeyCode::E, KeyCode::R, ModifierFlag::NONE, 
+                    KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_active_spacesmode_k
+                </autogen>
+            </item>
+            <item>
+                <name>Simultaneous Key Presses [A+S] to turn on Spaces Mode</name>
+                <identifier>private.simultaneouskeypresses_spaces_mode_AS</identifier>
+                <autogen>--SimultaneousKeyPresses--
+                    KeyCode::A, KeyCode::S, ModifierFlag::NONE,
+                    KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_active_spacesmode_k
+                </autogen>
+            </item>
+            <item>
+                <name>Simultaneous Key Presses [S+D] to turn on Spaces Mode</name>
+                <identifier>private.simultaneouskeypresses_spaces_mode_SD</identifier>
+                <autogen>--SimultaneousKeyPresses--
+                    KeyCode::S, KeyCode::D, ModifierFlag::NONE,
+                    KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_active_spacesmode_k
+                </autogen>
+            </item>
+            <item>
+                <name>Simultaneous Key Presses [D+F] to turn on Spaces Mode</name>
+                <identifier>private.simultaneouskeypresses_spaces_mode_DF</identifier>
+                <autogen>--SimultaneousKeyPresses--
+                    KeyCode::D, KeyCode::F, ModifierFlag::NONE,
+                    KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_active_spacesmode_k
+                </autogen>
+            </item>
+            <item>
+                <name>Simultaneous Key Presses [Z+X] to turn on Spaces Mode</name>
+                <identifier>private.simultaneouskeypresses_spaces_mode_ZX</identifier>
+                <autogen>--SimultaneousKeyPresses--
+                    KeyCode::Z, KeyCode::X, ModifierFlag::NONE,
+                    KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_active_spacesmode_k
+                </autogen>
+            </item>
+            <item>
+                <name>Simultaneous Key Presses [X+C] to turn on Spaces Mode</name>
+                <identifier>private.simultaneouskeypresses_spaces_mode_XC</identifier>
+                <autogen>--SimultaneousKeyPresses--
+                    KeyCode::X, KeyCode::C, ModifierFlag::NONE,
+                    KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_active_spacesmode_k
+                </autogen>
+            </item>
+            <item>
+                <name>Simultaneous Key Presses [C+V] to turn on Spaces Mode</name>
+                <identifier>private.simultaneouskeypresses_spaces_mode_CV</identifier>
+                <autogen>--SimultaneousKeyPresses--
+                    KeyCode::C, KeyCode::V, ModifierFlag::NONE,
+                    KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_active_spacesmode_k
+                </autogen>
+            </item>
+        </item>
+    </item>
+</root>
+
+

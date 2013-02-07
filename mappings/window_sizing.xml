@@ -1,0 +1,114 @@
+<?xml version="1.0"?>
+<root>
+    <item>
+        <name>Window Resizing</name>
+        <appendix>To be used with Better Touch Tool or other resizing application</appendix>
+        <item>
+            <name>Window Sizing Mode (K Centered)</name>
+            <appendix>The "window sizing mode" allows you to resizing the current window to</appendix>
+            <appendix>a predefined size and location (you must configure the shortcuts to match).</appendix>
+            <appendix> </appendix>
+            <appendix>U I O &#8594; TL     TOP     TR</appendix>
+            <appendix>J K L &#8594; LEFT   CENTER  RIGHT</appendix>
+            <appendix>M , . &#8594; BL     BOTTOM  BR</appendix>
+            <appendix></appendix>
+            <appendix>RETURN &#8594; MAXIMIZED</appendix>
+            <appendix>SHIFT_R &#8594; RESTORE</appendix>
+            <appendix>DELETE &#8594; MINIMIZE</appendix>
+            <appendix>SPACE &#8594; NEXT_MONITOR</appendix>
+            <appendix></appendix>
+            <appendix>Hold W+E to activate "window resizing mode", then press one of the above keys</appendix>
+            <identifier vk_config="true">notsave.private_window_resizing_k</identifier>
+
+            <autogen>--ShowStatusMessage-- Window Resizing</autogen>
+            <autogen>--KeyToKey-- KeyCode::U,         KeyCode::CURSOR_LEFT,     ModifierFlag::SHIFT_L | ModifierFlag:: OPTION_L | ModifierFlag::CONTROL_L</autogen>
+            <autogen>--KeyToKey-- KeyCode::I,         KeyCode::CURSOR_UP,       ModifierFlag::COMMAND_L | ModifierFlag:: OPTION_L | ModifierFlag::CONTROL_L</autogen>
+            <autogen>--KeyToKey-- KeyCode::O,         KeyCode::CURSOR_UP,       ModifierFlag::SHIFT_L | ModifierFlag:: OPTION_L | ModifierFlag::CONTROL_L</autogen>
+
+            <autogen>--KeyToKey-- KeyCode::J,         KeyCode::CURSOR_LEFT,     ModifierFlag::COMMAND_L | ModifierFlag:: OPTION_L | ModifierFlag::CONTROL_L</autogen>
+            <autogen>--KeyToKey-- KeyCode::K,         KeyCode::C,               ModifierFlag::COMMAND_L | ModifierFlag:: OPTION_L | ModifierFlag::CONTROL_L</autogen>
+            <autogen>--KeyToKey-- KeyCode::L,         KeyCode::CURSOR_RIGHT,    ModifierFlag::COMMAND_L | ModifierFlag:: OPTION_L | ModifierFlag::CONTROL_L</autogen>
+
+            <autogen>--KeyToKey-- KeyCode::M,         KeyCode::CURSOR_DOWN,     ModifierFlag::SHIFT_L | ModifierFlag:: OPTION_L | ModifierFlag::CONTROL_L</autogen>
+            <autogen>--KeyToKey-- KeyCode::COMMA,     KeyCode::CURSOR_DOWN,     ModifierFlag::COMMAND_L | ModifierFlag:: OPTION_L | ModifierFlag::CONTROL_L</autogen>
+            <autogen>--KeyToKey-- KeyCode::DOT,       KeyCode::CURSOR_RIGHT,    ModifierFlag::SHIFT_L | ModifierFlag:: OPTION_L | ModifierFlag::CONTROL_L</autogen>
+
+            <autogen>--KeyToKey-- KeyCode::RETURN,    KeyCode::M,               ModifierFlag::COMMAND_L | ModifierFlag:: OPTION_L | ModifierFlag::CONTROL_L</autogen>
+            <autogen>--KeyToKey-- KeyCode::SHIFT_R,   KeyCode::SLASH,           ModifierFlag::COMMAND_L | ModifierFlag:: OPTION_L | ModifierFlag::CONTROL_L</autogen>
+            <autogen>--KeyToKey-- KeyCode::DELETE,    KeyCode::M,               ModifierFlag::COMMAND_L</autogen>
+            <autogen>--KeyToKey-- KeyCode::SPACE,     KeyCode::C,               ModifierFlag::SHIFT_L | ModifierFlag:: OPTION_L | ModifierFlag::CONTROL_L</autogen>
+        </item>
+        <item>
+            <name>Simultaneous Key Presses [Q+W] to turn on Window Resizing Mode</name>
+            <identifier>private.simultaneouskeypresses_window_resizing_mode_QW</identifier>
+            <autogen>--SimultaneousKeyPresses--
+                KeyCode::Q, KeyCode::W, ModifierFlag::NONE, 
+                KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_window_resizing_k
+            </autogen>
+        </item>
+        <item>
+            <name>Simultaneous Key Presses [W+E] to turn on Window Resizing Mode</name>
+            <identifier>private.simultaneouskeypresses_window_resizing_mode_WE</identifier>
+            <autogen>--SimultaneousKeyPresses--
+                KeyCode::W, KeyCode::E, ModifierFlag::NONE, 
+                KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_window_resizing_k
+            </autogen>
+        </item>
+        <item>
+            <name>Simultaneous Key Presses [E+R] to turn on Window Resizing Mode</name>
+            <identifier>private.simultaneouskeypresses_window_resizing_mode_ER</identifier>
+            <autogen>--SimultaneousKeyPresses--
+                KeyCode::E, KeyCode::R, ModifierFlag::NONE, 
+                KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_window_resizing_k
+            </autogen>
+        </item>
+        <item>
+            <name>Simultaneous Key Presses [A+S] to turn on Window Resizing Mode</name>
+            <identifier>private.simultaneouskeypresses_window_resizing_mode_AS</identifier>
+            <autogen>--SimultaneousKeyPresses--
+                KeyCode::A, KeyCode::S, ModifierFlag::NONE,
+                KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_window_resizing_k
+            </autogen>
+        </item>
+        <item>
+            <name>Simultaneous Key Presses [S+D] to turn on Window Resizing Mode</name>
+            <identifier>private.simultaneouskeypresses_window_resizing_mode_SD</identifier>
+            <autogen>--SimultaneousKeyPresses--
+                KeyCode::S, KeyCode::D, ModifierFlag::NONE,
+                KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_window_resizing_k
+            </autogen>
+        </item>
+        <item>
+            <name>Simultaneous Key Presses [D+F] to turn on Window Resizing Mode</name>
+            <identifier>private.simultaneouskeypresses_window_resizing_mode_DF</identifier>
+            <autogen>--SimultaneousKeyPresses--
+                KeyCode::D, KeyCode::F, ModifierFlag::NONE,
+                KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_window_resizing_k
+            </autogen>
+        </item>
+        <item>
+            <name>Simultaneous Key Presses [Z+X] to turn on Window Resizing Mode</name>
+            <identifier>private.simultaneouskeypresses_window_resizing_mode_ZX</identifier>
+            <autogen>--SimultaneousKeyPresses--
+                KeyCode::Z, KeyCode::X, ModifierFlag::NONE,
+                KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_window_resizing_k
+            </autogen>
+        </item>
+        <item>
+            <name>Simultaneous Key Presses [X+C] to turn on Window Resizing Mode</name>
+            <identifier>private.simultaneouskeypresses_window_resizing_mode_XC</identifier>
+            <autogen>--SimultaneousKeyPresses--
+                KeyCode::X, KeyCode::C, ModifierFlag::NONE,
+                KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_window_resizing_k
+            </autogen>
+        </item>
+        <item>
+            <name>Simultaneous Key Presses [C+V] to turn on Window Resizing Mode</name>
+            <identifier>private.simultaneouskeypresses_window_resizing_mode_CV</identifier>
+            <autogen>--SimultaneousKeyPresses--
+                KeyCode::C, KeyCode::V, ModifierFlag::NONE,
+                KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_window_resizing_k
+            </autogen>
+        </item>
+    </item>
+</root>

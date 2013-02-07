@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<root>
+    <!--<include path="test.xml" />-->
+    <item>
+        <name>Custom Mappings</name>
+        <include path="mappings/one_handed.xml" />
+        <include path="mappings/numkeys.xml" />
+        <include path="mappings/window_sizing.xml" />
+        <include path="mappings/cursor.xml" />
+        <include path="mappings/spaces.xml" />
+    </item>
+</root>

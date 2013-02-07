@@ -1,0 +1,387 @@
+<?xml version="1.0"?>
+<root>
+    <!--TODO: Use another key to cycle through modes in reverse order -->
+    <item>
+        <name>One Handed Keyboard</name>
+        <item>
+            <appendix>These mappings allow you to use your keyboard with only one hand.</appendix>
+            <appendix>It allows you to use only the left half of your keyboard and remapping</appendix>
+            <appendix>a modifier key (usually SPACE) to type the other half of the keyboard.</appendix>
+            <appendix>This allows you to type with only one hand without having to relearn a new layout.</appendix>
+        </item>
+        <item>
+            <name>Left Hand "Mirror Mode"</name>
+            <appendix>-------------</appendix>
+            <appendix>Flips the standard keys on the left side of the keyboard.</appendix>
+            <appendix></appendix>
+            <appendix>Q W E R T  &#8594; P O I U Y</appendix>
+            <appendix>A S D F G  &#8594; ; L K J H</appendix>
+            <appendix>Z X C V B  &#8594; / . , M N </appendix>
+            <appendix></appendix>
+            <appendix>Tab &#8594; Delete</appendix>
+            <appendix>` &#8594; Esc</appendix>
+            <appendix>CAPSLOCK &#8594; ' (plus Shift-CAPS &#8594; ")</appendix>
+            <appendix>   // Note: In order for CAPSLOCK to work, you need to install</appendix>
+            <appendix>   // PCKeyboardHack and map CAPSLOCK to PC Application Key (code 110)</appendix>
+
+            <identifier vk_config="true">notsave.mirror_mode</identifier>
+            <!--<autogen>__ShowStatusMessage__ Mirror Mode</autogen>-->
+
+            <autogen>__KeyToKey__ KeyCode::Q,             KeyCode::P</autogen>
+            <autogen>__KeyToKey__ KeyCode::W,             KeyCode::O</autogen>
+            <autogen>__KeyToKey__ KeyCode::E,             KeyCode::I</autogen>
+            <autogen>__KeyToKey__ KeyCode::R,             KeyCode::U</autogen>
+            <autogen>__KeyToKey__ KeyCode::T,             KeyCode::Y</autogen>
+
+            <autogen>__KeyToKey__ KeyCode::A,             KeyCode::SEMICOLON</autogen>
+            <autogen>__KeyToKey__ KeyCode::S,             KeyCode::L</autogen>
+            <autogen>__KeyToKey__ KeyCode::D,             KeyCode::K</autogen>
+            <autogen>__KeyToKey__ KeyCode::F,             KeyCode::J</autogen>
+            <autogen>__KeyToKey__ KeyCode::G,             KeyCode::H</autogen>
+
+            <autogen>__KeyToKey__ KeyCode::Z,             KeyCode::SLASH</autogen>
+            <autogen>__KeyToKey__ KeyCode::X,             KeyCode::DOT</autogen>
+            <autogen>__KeyToKey__ KeyCode::C,             KeyCode::COMMA</autogen>
+            <autogen>__KeyToKey__ KeyCode::V,             KeyCode::M</autogen>
+            <autogen>__KeyToKey__ KeyCode::B,             KeyCode::N</autogen>
+
+            <autogen>__KeyToKey__ KeyCode::TAB,           KeyCode::DELETE</autogen>
+            <autogen>__KeyToKey__ KeyCode::BACKQUOTE,     KeyCode::ESCAPE</autogen>
+            <autogen>__KeyToKey__ KeyCode::PC_APPLICATION,        KeyCode::QUOTE</autogen>
+            <!--<autogen>__KeyToKey__ KeyCode::PC_APPLICATION, ModifierFlag::SHIFT_L,       KeyCode::QUOTE, ModifierFlag::SHIFT_R</autogen>-->
+
+            <block>
+                <config_only>option.mirror_mode_shift2return</config_only>
+                <autogen>__HoldingKeyToKey__ KeyCode::SHIFT_L, KeyCode::RETURN, KeyCode::VK_NONE, KeyCode::SHIFT_L, Option::NOREPEAT</autogen>
+            </block>
+            <block>
+                <config_only>option.mirror_mode_shift2esc</config_only>
+                <autogen>__HoldingKeyToKey__ KeyCode::SHIFT_L, KeyCode::ESCAPE, KeyCode::VK_NONE, KeyCode::SHIFT_L</autogen>
+            </block>
+            <block>
+                <config_only>option.mirror_mode_sticky_commandl</config_only>
+                <autogen>__KeyOverlaidModifier__ KeyCode::COMMAND_L, KeyCode::COMMAND_L, KeyCode::VK_STICKY_COMMAND_L</autogen>
+            </block>
+            <block>
+                <config_only>option.mirror_mode_sticky_optionl</config_only>
+                <autogen>__KeyOverlaidModifier__ KeyCode::OPTION_L, KeyCode::OPTION_L, KeyCode::VK_STICKY_OPTION_L</autogen>
+            </block>
+            <block>
+                <config_only>option.mirror_mode_sticky_controll</config_only>
+                <autogen>__KeyOverlaidModifier__ KeyCode::CONTROL_L, KeyCode::CONTROL_L, KeyCode::VK_STICKY_CONTROL_L</autogen>
+            </block>
+            <block>
+                <config_only>option.mirror_mode_sticky_shiftl</config_only>
+                <autogen>__KeyOverlaidModifier__ KeyCode::SHIFT_L, KeyCode::SHIFT_L, KeyCode::VK_STICKY_SHIFT_L</autogen>
+            </block>
+
+        </item>
+        <item>
+            <name>Hold SPACE for One Handed Mode, then press a key to mirror the keyboard.</name>
+            <identifier>private.mirror_mode_SPACE</identifier>
+            <autogen>
+                __KeyOverlaidModifier__
+                KeyCode::SPACE, 
+                KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_mirror_mode,
+                KeyCode::SPACE,
+                KeyCode::VK_NONE
+            </autogen>
+            <autogen>__KeyToKey__ KeyCode::PC_APPLICATION, KeyCode::RETURN</autogen>
+        </item>
+        <item>
+            <name>Options</name>
+            <item>
+                <name>Alternate Mappings</name>
+                <appendix>You can use these if you don't like the default mappings for RETURN, ESCAPE, etc.</appendix>
+            </item>
+            <item>
+                <name>` &#8594; ESC </name>
+                <identifier>option.normal_mode_backquote2esc</identifier>
+                <autogen>__KeyToKey__ KeyCode::BACKQUOTE, KeyCode::ESCAPE</autogen>
+            </item>
+            <item>
+                <name>SHIFT &#8594; RETURN </name>
+                <appendix>Hitting SHIFT while holding SPACE to RETURN</appendix>
+                <identifier>option.mirror_mode_shift2return</identifier>
+            </item>
+            <item>
+                <name>SHIFT &#8594; ESCAPE </name>
+                <appendix>Hitting SHIFT while holding SPACE to ESCAPE</appendix>
+                <identifier>option.mirror_mode_shift2esc</identifier>
+            </item>
+            <item>
+                <name>Sticky COMMAND_L</name>
+                <identifier>option.mirror_mode_sticky_commandl</identifier>
+            </item>
+            <item>
+                <name>Sticky OPTION_L</name>
+                <identifier>option.mirror_mode_sticky_optionl</identifier>
+            </item>
+            <item>
+                <name>Sticky CONTROL_L</name>
+                <identifier>option.mirror_mode_sticky_controll</identifier>
+            </item>
+            <item>
+                <name>Sticky SHIFT_L</name>
+                <identifier>option.mirror_mode_sticky_shiftl</identifier>
+            </item>
+        </item>
+        <item>
+            <name>Number Mode</name>
+            <identifier vk_config="true">notsave.mirror_number_mode</identifier>
+
+            <autogen>__KeyToKey__ KeyCode::B,         KeyCode::KEYPAD_0</autogen>
+            <autogen>__KeyToKey__ KeyCode::V,         KeyCode::KEYPAD_1</autogen>
+            <autogen>__KeyToKey__ KeyCode::C,         KeyCode::KEYPAD_2</autogen>
+            <autogen>__KeyToKey__ KeyCode::X,         KeyCode::KEYPAD_3</autogen>
+            <autogen>__KeyToKey__ KeyCode::Z,         KeyCode::KEYPAD_SLASH</autogen>
+
+            <autogen>__KeyToKey__ KeyCode::G,         KeyCode::KEYPAD_DOT</autogen>
+            <autogen>__KeyToKey__ KeyCode::F,         KeyCode::KEYPAD_4</autogen>
+            <autogen>__KeyToKey__ KeyCode::D,         KeyCode::KEYPAD_5</autogen>
+            <autogen>__KeyToKey__ KeyCode::S,         KeyCode::KEYPAD_6</autogen>
+            <autogen>__KeyToKey__ KeyCode::A,         KeyCode::KEYPAD_PLUS</autogen>
+
+            <autogen>__KeyToKey__ KeyCode::T,         KeyCode::KEYPAD_MULTIPLY</autogen>
+            <autogen>__KeyToKey__ KeyCode::R,         KeyCode::KEYPAD_7</autogen>
+            <autogen>__KeyToKey__ KeyCode::E,         KeyCode::KEYPAD_8</autogen>
+            <autogen>__KeyToKey__ KeyCode::W,         KeyCode::KEYPAD_9</autogen>
+            <autogen>__KeyToKey__ KeyCode::Q,         KeyCode::KEYPAD_MINUS</autogen>
+
+            <autogen>__KeyToKey__ KeyCode::TAB,       KeyCode::EQUAL</autogen>
+            <autogen>__KeyToKey__ KeyCode::ESCAPE, KeyCode::VK_CONFIG_FORCE_OFF_notsave_mirror_number_mode</autogen>
+
+            <autogen>__ShowStatusMessage__ Mirror Number Mode</autogen>
+
+            <block>
+                <config_only>private.mirror_cycle_mode_fn</config_only>
+                <autogen>__KeyToKey__
+                    KeyCode::FN, ModifierFlag::FN | ModifierFlag::NONE,
+                    KeyCode::VK_CONFIG_FORCE_OFF_notsave_mirror_number_mode,
+                    KeyCode::VK_CONFIG_FORCE_ON_notsave_mirror_symbol_mode
+                </autogen>
+                <autogen>__KeyToKey__
+                    KeyCode::FN, ModifierFlag::FN | VK_SHIFT | ModifierFlag::NONE,
+                    KeyCode::VK_CONFIG_FORCE_OFF_notsave_mirror_number_mode
+                </autogen>
+                <autogen>__KeyToKey__ KeyCode::ESCAPE,    KeyCode::VK_CONFIG_FORCE_OFF_notsave_mirror_number_mode</autogen>
+            </block>
+
+            <block>
+                <config_only>private.mirror_mode_SPACE</config_only>
+                <autogen>
+                    __KeyOverlaidModifier__
+                    KeyCode::SPACE, 
+                    KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_mirror_mode,
+                    KeyCode::VK_CONFIG_FORCE_OFF_notsave_mirror_number_mode,
+                    KeyCode::VK_NONE
+                </autogen>
+            </block>
+
+            <item>
+                <appendix>Uses standard letter keys to provide a mirrored numeric keypad.</appendix>
+                <appendix></appendix>
+                <appendix>TAB &#8594; =</appendix>
+                <appendix>Q W E R T  &#8594; - 9 8 7 *</appendix>
+                <appendix>A S D F G  &#8594; + 6 5 4 .</appendix>
+                <appendix>Z X C V B  &#8594; / 3 2 1 0 </appendix>
+                <appendix></appendix>
+                <appendix>ESC to get out of this mode.</appendix>
+                <appendix>if "Mirror Mode" setting is active, you can press SPACE to exit out of this mode</appendix>
+            </item>
+            <item>
+                <name>Press 2 to activate "Number Mode"</name>
+                <identifier>option.mirror_number_mode_2</identifier>
+                <autogen>__KeyToKey__ KeyCode::KEY_2, KeyCode::VK_CONFIG_FORCE_ON_notsave_mirror_number_mode</autogen>
+            </item>
+            <item>
+                <name>Press D+F to activate "Number Mode"</name>
+                <identifier>option.mirror_number_mode_DF</identifier>
+                <autogen>__SimultaneousKeyPresses__ KeyCode::D, KeyCode::F, KeyCode::VK_CONFIG_FORCE_ON_notsave_mirror_number_mode</autogen>
+            </item>
+            <item>
+                <name>Press A+F to activate "Number Mode"</name>
+                <identifier>option.mirror_number_mode_AF</identifier>
+                <autogen>__SimultaneousKeyPresses__ KeyCode::A, KeyCode::F, KeyCode::VK_CONFIG_FORCE_ON_notsave_mirror_number_mode</autogen>
+            </item>
+        </item>
+        <item>
+            <name>Symbols Mode</name>
+            <identifier vk_config="true">notsave.mirror_symbol_mode</identifier>
+
+            <autogen>__KeyToKey__ KeyCode::Q, ModifierFlag::NONE,         KeyCode::KEY_1, ModifierFlag::SHIFT_R</autogen>
+            <autogen>__KeyToKey__ KeyCode::W, ModifierFlag::NONE,         KeyCode::KEY_2, ModifierFlag::SHIFT_R</autogen>
+            <autogen>__KeyToKey__ KeyCode::E, ModifierFlag::NONE,         KeyCode::KEY_3, ModifierFlag::SHIFT_R</autogen>
+            <autogen>__KeyToKey__ KeyCode::R, ModifierFlag::NONE,         KeyCode::KEY_4, ModifierFlag::SHIFT_R</autogen>
+            <autogen>__KeyToKey__ KeyCode::T, ModifierFlag::NONE,         KeyCode::KEY_5, ModifierFlag::SHIFT_R</autogen>
+
+            <autogen>__KeyToKey__ KeyCode::PC_APPLICATION, ModifierFlag::NONE,    KeyCode::BACKQUOTE</autogen>
+            <autogen>__KeyToKey__ KeyCode::A, ModifierFlag::NONE,         KeyCode::BRACKET_RIGHT</autogen>
+            <autogen>__KeyToKey__ KeyCode::S, ModifierFlag::NONE,         KeyCode::BRACKET_LEFT</autogen>
+            <autogen>__KeyToKey__ KeyCode::D, ModifierFlag::NONE,         KeyCode::MINUS</autogen>
+
+            <autogen>__KeyToKey__ KeyCode::Z, ModifierFlag::NONE,         KeyCode::BACKSLASH</autogen>
+
+            <autogen>__KeyToKey__ KeyCode::TAB,                           KeyCode::EQUAL</autogen>
+
+
+            <autogen>__KeyToKey__ KeyCode::Q, ModifierFlag::SHIFT_L,         KeyCode::KEY_0, ModifierFlag::SHIFT_R</autogen>
+            <autogen>__KeyToKey__ KeyCode::W, ModifierFlag::SHIFT_L,         KeyCode::KEY_9, ModifierFlag::SHIFT_R</autogen>
+            <autogen>__KeyToKey__ KeyCode::E, ModifierFlag::SHIFT_L,         KeyCode::KEY_8, ModifierFlag::SHIFT_R</autogen>
+            <autogen>__KeyToKey__ KeyCode::R, ModifierFlag::SHIFT_L,         KeyCode::KEY_7, ModifierFlag::SHIFT_R</autogen>
+            <autogen>__KeyToKey__ KeyCode::T, ModifierFlag::SHIFT_L,         KeyCode::KEY_6, ModifierFlag::SHIFT_R</autogen>
+
+            <autogen>__KeyToKey__ KeyCode::PC_APPLICATION, ModifierFlag::SHIFT_L,    KeyCode::BACKQUOTE, ModifierFlag::SHIFT_R</autogen>
+            <autogen>__KeyToKey__ KeyCode::A, ModifierFlag::SHIFT_L,         KeyCode::BRACKET_RIGHT, ModifierFlag::SHIFT_R</autogen>
+            <autogen>__KeyToKey__ KeyCode::S, ModifierFlag::SHIFT_L,         KeyCode::BRACKET_LEFT, ModifierFlag::SHIFT_R</autogen>
+            <autogen>__KeyToKey__ KeyCode::D, ModifierFlag::SHIFT_L,         KeyCode::MINUS, ModifierFlag::SHIFT_R</autogen>
+
+            <autogen>__KeyToKey__ KeyCode::Z, ModifierFlag::SHIFT_L,         KeyCode::BACKSLASH, ModifierFlag::SHIFT_R</autogen>
+
+            <autogen>__KeyToKey__ KeyCode::ESCAPE, KeyCode::VK_CONFIG_FORCE_OFF_notsave_mirror_symbol_mode</autogen>
+
+            <autogen>__ShowStatusMessage__ Mirror Symbol Mode</autogen>
+
+            <block>
+                <config_only>private.mirror_cycle_mode_fn</config_only>
+                <autogen>__KeyToKey__
+                    KeyCode::FN, ModifierFlag::FN | ModifierFlag::NONE,
+                    KeyCode::VK_CONFIG_FORCE_OFF_notsave_mirror_symbol_mode,
+                    KeyCode::VK_CONFIG_FORCE_ON_notsave_mirror_cursor_mode
+                </autogen>
+                <autogen>__KeyToKey__
+                    KeyCode::FN, ModifierFlag::FN | VK_SHIFT | ModifierFlag::NONE,
+                    KeyCode::VK_CONFIG_FORCE_OFF_notsave_mirror_symbol_mode,
+                    KeyCode::VK_CONFIG_FORCE_ON_notsave_mirror_number_mode
+                </autogen>
+                <autogen>__KeyToKey__ KeyCode::ESCAPE,    KeyCode::VK_CONFIG_FORCE_OFF_notsave_mirror_symbol_mode</autogen>
+            </block>
+
+            <block>
+                <config_only>private.mirror_mode_SPACE</config_only>
+                <autogen>
+                    __KeyOverlaidModifier__
+                    KeyCode::SPACE, 
+                    KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_mirror_mode,
+                    KeyCode::VK_CONFIG_FORCE_OFF_notsave_mirror_symbol_mode,
+                    KeyCode::VK_NONE
+                </autogen>
+            </block>
+
+            <item>
+                <appendix>Uses standard letter keys to provide a way of entering symbols.</appendix>
+                <appendix></appendix>
+                <appendix>TAB &#8594; =</appendix>
+                <appendix>Q W E R T  &#8594; ! @ # $ %</appendix>
+                <appendix>A S D      &#8594; ] [ -</appendix>
+                <appendix>Z          &#8594; \</appendix>
+                <appendix>-------------</appendix>
+                <appendix>with Shift Modifier held</appendix>
+                <appendix></appendix>
+                <appendix>Q W E R T  &#8594; ) ( * &amp; ^</appendix>
+                <appendix>A S D      &#8594; } { _</appendix>
+                <appendix>Z          &#8594; |</appendix>
+                <appendix></appendix>
+                <appendix>if "Mirror Mode" setting is active, tap SPACE to exit out of this mode</appendix>
+            </item>
+            <item>
+                <name>Press 3 to activate "Symbols Mode"</name>
+                <identifier>option.mirror_symbol_mode_3</identifier>
+                <autogen>__KeyToKey__ KeyCode::KEY_3, KeyCode::VK_CONFIG_FORCE_ON_notsave_mirror_symbol_mode</autogen>
+            </item>
+            <item>
+                <name>Press S+D to activate "Symbols Mode"</name>
+                <identifier>option.mirror_symbol_mode_SD</identifier>
+                <autogen>__SimultaneousKeyPresses__ KeyCode::S, KeyCode::D, KeyCode::VK_CONFIG_FORCE_ON_notsave_mirror_symbol_mode</autogen>
+            </item>
+            <item>
+                <name>Press S+F to activate "Symbols Mode"</name>
+                <identifier>option.mirror_symbol_mode_SF</identifier>
+                <autogen>__SimultaneousKeyPresses__ KeyCode::S, KeyCode::F, KeyCode::VK_CONFIG_FORCE_ON_notsave_mirror_symbol_mode</autogen>
+            </item>
+        </item>
+        <item>
+            <name>Cursor Mode</name>
+            <identifier vk_config="true">notsave.mirror_cursor_mode</identifier>
+
+            <!--TODO: implement cursor keys-->
+            <autogen>__KeyToKey__ KeyCode::Q, ModifierFlag::NONE,         KeyCode::FORWARD_DELETE</autogen>
+            <autogen>__KeyToKey__ KeyCode::W, ModifierFlag::NONE,         KeyCode::PAGEUP</autogen>
+            <autogen>__KeyToKey__ KeyCode::E, ModifierFlag::NONE,         KeyCode::CURSOR_UP</autogen>
+            <autogen>__KeyToKey__ KeyCode::R, ModifierFlag::NONE,         KeyCode::HOME</autogen>
+
+            <autogen>__KeyToKey__ KeyCode::S, ModifierFlag::NONE,         KeyCode::CURSOR_LEFT</autogen>
+            <autogen>__KeyToKey__ KeyCode::D, ModifierFlag::NONE,         KeyCode::CURSOR_DOWN</autogen>
+            <autogen>__KeyToKey__ KeyCode::F, ModifierFlag::NONE,         KeyCode::CURSOR_RIGHT</autogen>
+
+            <autogen>__KeyToKey__ KeyCode::X, ModifierFlag::NONE,         KeyCode::PAGEDOWN</autogen>
+            <autogen>__KeyToKey__ KeyCode::V, ModifierFlag::NONE,         KeyCode::END</autogen>
+
+            <autogen>__KeyToKey__ KeyCode::ESCAPE, KeyCode::VK_CONFIG_FORCE_OFF_notsave_mirror_cursor_mode</autogen>
+
+            <autogen>__ShowStatusMessage__ Cursor Mode</autogen>
+
+            <block>
+                <config_only>private.mirror_cycle_mode_fn</config_only>
+                <autogen>__KeyToKey__
+                    KeyCode::FN, ModifierFlag::FN | ModifierFlag::NONE,
+                    KeyCode::VK_CONFIG_FORCE_OFF_notsave_mirror_cursor_mode
+                </autogen>
+                <autogen>__KeyToKey__
+                    KeyCode::FN, ModifierFlag::FN | VK_SHIFT | ModifierFlag::NONE,
+                    KeyCode::VK_CONFIG_FORCE_OFF_notsave_mirror_cursor_mode,
+                    KeyCode::VK_CONFIG_FORCE_ON_notsave_mirror_symbol_mode
+                </autogen>
+                <autogen>__KeyToKey__ KeyCode::ESCAPE,    KeyCode::VK_CONFIG_FORCE_OFF_notsave_mirror_cursor_mode</autogen>
+            </block>
+
+            <block>
+                <config_only>private.mirror_mode_SPACE</config_only>
+                <autogen>
+                    __KeyOverlaidModifier__
+                    KeyCode::SPACE, 
+                    KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_mirror_mode,
+                    KeyCode::VK_CONFIG_FORCE_OFF_notsave_mirror_cursor_mode,
+                    KeyCode::VK_NONE
+                </autogen>
+            </block>
+            <item>
+                <appendix>Uses standard letter keys to provide a cursor/navigation keys.</appendix>
+                <appendix></appendix>
+                <appendix>Q W E R &#8594; del pgup &#8593; home</appendix>
+                <appendix>  S D F &#8594; &#8592; &#8595; &#8594;</appendix>
+                <appendix>  X   V &#8594; pgdown end</appendix>
+                <appendix></appendix>
+                <appendix>Press SPACE or ESC to exit out of Cursor Mode</appendix>
+            </item>
+            <item>
+                <name>Press 4 to activate "Cursor Mode"</name>
+                <identifier>option.mirror_cursor_mode_4</identifier>
+                <autogen>__KeyToKey__ KeyCode::KEY_4, KeyCode::VK_CONFIG_FORCE_ON_notsave_mirror_cursor_mode</autogen>
+            </item>
+            <item>
+                <name>Press A+S to activate "Cursor Mode"</name>
+                <identifier>option.mirror_cursor_mode_AS</identifier>
+                <autogen>__SimultaneousKeyPresses__ KeyCode::A, KeyCode::S, KeyCode::VK_CONFIG_FORCE_ON_notsave_mirror_cursor_mode</autogen>
+            </item>
+            <item>
+                <name>Press A+D to activate "Cursor Mode"</name>
+                <identifier>option.mirror_cursor_mode_AD</identifier>
+                <autogen>__SimultaneousKeyPresses__ KeyCode::A, KeyCode::D, KeyCode::VK_CONFIG_FORCE_ON_notsave_mirror_cursor_mode</autogen>
+            </item>
+        </item>
+        <item>
+            <name>Press FN to cycle between Normal, Number, Symbols, and Cursor Mode.</name>
+            <appendix>+ press ESCAPE to go back to normal mode</appendix>
+            <identifier>private.mirror_cycle_mode_fn</identifier>
+            <autogen>__KeyToKey__
+                KeyCode::FN, ModifierFlag::FN | ModifierFlag::NONE,
+                KeyCode::VK_CONFIG_FORCE_ON_notsave_mirror_number_mode
+            </autogen>
+            <autogen>__KeyToKey__
+                KeyCode::FN, ModifierFlag::FN | VK_SHIFT | ModifierFlag::NONE,
+                KeyCode::VK_CONFIG_FORCE_ON_notsave_mirror_cursor_mode
+            </autogen>
+        </item>
+    </item>
+</root>

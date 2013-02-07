@@ -1,0 +1,158 @@
+<?xml version="1.0"?>
+<root>
+    <item>
+        <name>Use Virtual Numpad (K-centered)</name>
+        <item>
+            <name>Virtual Numpad (K centered)</name>
+            <appendix>The "Virtual Numpad" is a mode that allows you to type letter keys and have them</appendix>
+            <appendix>replaced with equivalent numeric keypads ones.</appendix>
+            <appendix>7 8 9 0 &#8594; CLEAR = / *</appendix>
+            <appendix>U I O P [ &#8594; 7 8 9 - BS</appendix>
+            <appendix>J K L ; &#8594; 4 5 6 +</appendix>
+            <appendix>M , . / &#8594; 1 2 3 ENTER</appendix>
+            <appendix>SPACE OPTION_R &#8594; 0 .</appendix>
+            <identifier vk_config="true">notsave.virtual_numlock_k</identifier>
+            <autogen>--ShowStatusMessage-- Virtual NumLock</autogen>
+            <autogen>--KeyToKey-- KeyCode::SPACE,     KeyCode::KEYPAD_0</autogen>
+            <autogen>--KeyToKey-- KeyCode::M,         KeyCode::KEYPAD_1</autogen>
+            <autogen>--KeyToKey-- KeyCode::COMMA,     KeyCode::KEYPAD_2</autogen>
+            <autogen>--KeyToKey-- KeyCode::DOT,       KeyCode::KEYPAD_3</autogen>
+            <autogen>--KeyToKey-- KeyCode::J,         KeyCode::KEYPAD_4</autogen>
+            <autogen>--KeyToKey-- KeyCode::K,         KeyCode::KEYPAD_5</autogen>
+            <autogen>--KeyToKey-- KeyCode::L,         KeyCode::KEYPAD_6</autogen>
+            <autogen>--KeyToKey-- KeyCode::U,         KeyCode::KEYPAD_7</autogen>
+            <autogen>--KeyToKey-- KeyCode::I,         KeyCode::KEYPAD_8</autogen>
+            <autogen>--KeyToKey-- KeyCode::O,         KeyCode::KEYPAD_9</autogen>
+            <autogen>--KeyToKey-- KeyCode::SEMICOLON, KeyCode::KEYPAD_PLUS</autogen>
+            <autogen>--KeyToKey-- KeyCode::P,         KeyCode::KEYPAD_MINUS</autogen>
+            <autogen>--KeyToKey-- KeyCode::BRACKET_LEFT, KeyCode::DELETE</autogen>
+            <autogen>--KeyToKey-- KeyCode::KEY_7,     KeyCode::KEYPAD_CLEAR</autogen>
+            <autogen>--KeyToKey-- KeyCode::KEY_8,     KeyCode::KEYPAD_EQUAL</autogen>
+            <autogen>--KeyToKey-- KeyCode::KEY_9,     KeyCode::KEYPAD_SLASH</autogen>
+            <autogen>--KeyToKey-- KeyCode::KEY_0,     KeyCode::KEYPAD_MULTIPLY</autogen>
+            <autogen>--KeyToKey-- KeyCode::SLASH,     KeyCode::ENTER</autogen>
+            <autogen>--KeyToKey-- KeyCode::OPTION_R,  KeyCode::DOT</autogen>
+        </item>
+        <item>
+            <name>Hold key to use Virtual Numpad</name>
+            <appendix>Hold a modifier key while pressing the letter keys to get the numeric keys.</appendix>
+            <appendix>This is useful for typing quick numbers without having to swith modes.</appendix>
+            <item>
+                <name>Hold FN to use "Virtual Numpad"</name>
+                <identifier>private.fn_keys_to_virtual_numpad</identifier>
+                <autogen>--KeyToKey-- KeyCode::FN, KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_virtual_numlock_k</autogen>
+            </item>
+            <item>
+                <name>FN+SHIFT_L to use "Virtual Numpad"</name>
+                <identifier>private.fn_shift_keys_to_virtual_numpad</identifier>
+                <autogen>--KeyToKey-- KeyCode::FN, ModifierFlag::SHIFT_L, KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_virtual_numlock_k</autogen>
+                <autogen>--KeyToKey-- KeyCode::SHIFT_L, ModifierFlag::FN, KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_virtual_numlock_k</autogen>
+            </item>
+            <item>
+                <name>Simultaneous Key Presses [Q+W] to turn on Virtual Numpad</name>
+                <identifier>private.simultaneouskeypresses_virtual_numpad_mode_QW</identifier>
+                <autogen>--SimultaneousKeyPresses--
+                    KeyCode::Q, KeyCode::W, ModifierFlag::NONE, 
+                    KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_virtual_numlock_k
+                </autogen>
+            </item>
+            <item>
+                <name>Simultaneous Key Presses [W+E] to turn on Virtual Numpad</name>
+                <identifier>private.simultaneouskeypresses_virtual_numpad_mode_WE</identifier>
+                <autogen>--SimultaneousKeyPresses--
+                    KeyCode::W, KeyCode::E, ModifierFlag::NONE, 
+                    KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_virtual_numlock_k
+                </autogen>
+            </item>
+            <item>
+                <name>Simultaneous Key Presses [E+R] to turn on Virtual Numpad</name>
+                <identifier>private.simultaneouskeypresses_virtual_numpad_mode_ER</identifier>
+                <autogen>--SimultaneousKeyPresses--
+                    KeyCode::E, KeyCode::R, ModifierFlag::NONE, 
+                    KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_virtual_numlock_k
+                </autogen>
+            </item>
+            <item>
+                <name>Simultaneous Key Presses [A+S] to turn on Virtual Numpad</name>
+                <identifier>private.simultaneouskeypresses_virtual_numpad_mode_AS</identifier>
+                <autogen>--SimultaneousKeyPresses--
+                    KeyCode::A, KeyCode::S, ModifierFlag::NONE,
+                    KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_virtual_numlock_k
+                </autogen>
+            </item>
+            <item>
+                <name>Simultaneous Key Presses [S+D] to turn on Virtual Numpad</name>
+                <identifier>private.simultaneouskeypresses_virtual_numpad_mode_SD</identifier>
+                <autogen>--SimultaneousKeyPresses--
+                    KeyCode::S, KeyCode::D, ModifierFlag::NONE,
+                    KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_virtual_numlock_k
+                </autogen>
+            </item>
+            <item>
+                <name>Simultaneous Key Presses [D+F] to turn on Virtual Numpad</name>
+                <identifier>private.simultaneouskeypresses_virtual_numpad_mode_DF</identifier>
+                <autogen>--SimultaneousKeyPresses--
+                    KeyCode::D, KeyCode::F, ModifierFlag::NONE,
+                    KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_virtual_numlock_k
+                </autogen>
+            </item>
+            <item>
+                <name>Simultaneous Key Presses [Z+X] to turn on Virtual Numpad</name>
+                <identifier>private.simultaneouskeypresses_virtual_numpad_mode_ZX</identifier>
+                <autogen>--SimultaneousKeyPresses--
+                    KeyCode::Z, KeyCode::X, ModifierFlag::NONE,
+                    KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_virtual_numlock_k
+                </autogen>
+            </item>
+            <item>
+                <name>Simultaneous Key Presses [X+C] to turn on Virtual Numpad</name>
+                <identifier>private.simultaneouskeypresses_virtual_numpad_mode_XC</identifier>
+                <autogen>--SimultaneousKeyPresses--
+                    KeyCode::X, KeyCode::C, ModifierFlag::NONE,
+                    KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_virtual_numlock_k
+                </autogen>
+            </item>
+            <item>
+                <name>Simultaneous Key Presses [C+V] to turn on Virtual Numpad</name>
+                <identifier>private.simultaneouskeypresses_virtual_numpad_mode_CV</identifier>
+                <autogen>--SimultaneousKeyPresses--
+                    KeyCode::C, KeyCode::V, ModifierFlag::NONE,
+                    KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_virtual_numlock_k
+                </autogen>
+            </item>
+        </item>
+        <item>
+            <name>Toggle Numpad</name>
+            <appendix>Use a key/combination to toggle the Virtual Numpad. Once enabled,</appendix>
+            <appendix>pressing the letter keys will be remapped to the numeric keys.</appendix>
+            <item>
+                <name>Press FN+N to toggle "Virtual NumLock"</name>
+                <identifier>private.fn_n_to_virtual_numlock</identifier>
+                <autogen>--KeyToKey-- KeyCode::N, ModifierFlag::FN, KeyCode::VK_CONFIG_TOGGLE_notsave_virtual_numlock_k</autogen>
+            </item>
+            <item>
+                <name>Press FN+SHIFT_L+N to toggle "Virtual NumLock"</name>
+                <identifier>private.fn_sfhit_n_to_virtual_numlock</identifier>
+                <autogen>--KeyToKey-- KeyCode::N, ModifierFlag::FN | ModifierFlag::SHIFT_L, KeyCode::VK_CONFIG_TOGGLE_notsave_virtual_numlock_k</autogen>
+            </item>
+        </item>
+        <item>
+            <name>Disable standard numeric keys</name>
+            <appendix>This mapping is useful if you're trying to get used to the Virtual Numpad.</appendix>
+            <appendix>It makes the standard 1-0 keys useless. You can still use Shift+Numkeys for</appendix>
+            <appendix>symbols (eg: Shift+2 for @)</appendix>
+            <identifier>private.disable_regular_num_keys</identifier>
+            <autogen>--KeyToKey-- KeyCode::KEY_1, ModifierFlag::NONE, KeyCode::VK_NONE</autogen>
+            <autogen>--KeyToKey-- KeyCode::KEY_2, ModifierFlag::NONE, KeyCode::VK_NONE</autogen>
+            <autogen>--KeyToKey-- KeyCode::KEY_3, ModifierFlag::NONE, KeyCode::VK_NONE</autogen>
+            <autogen>--KeyToKey-- KeyCode::KEY_4, ModifierFlag::NONE, KeyCode::VK_NONE</autogen>
+            <autogen>--KeyToKey-- KeyCode::KEY_5, ModifierFlag::NONE, KeyCode::VK_NONE</autogen>
+            <autogen>--KeyToKey-- KeyCode::KEY_6, ModifierFlag::NONE, KeyCode::VK_NONE</autogen>
+            <autogen>--KeyToKey-- KeyCode::KEY_7, ModifierFlag::NONE, KeyCode::VK_NONE</autogen>
+            <autogen>--KeyToKey-- KeyCode::KEY_8, ModifierFlag::NONE, KeyCode::VK_NONE</autogen>
+            <autogen>--KeyToKey-- KeyCode::KEY_9, ModifierFlag::NONE, KeyCode::VK_NONE</autogen>
+            <autogen>--KeyToKey-- KeyCode::KEY_0, ModifierFlag::NONE, KeyCode::VK_NONE</autogen>
+        </item>
+    </item>
+</root>
+

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<root>
+        <!--Use this file to test mappings-->
+        <item>
+            <name>Test Mapping</name>
+            <appendix>This mapping does the following:</appendix>
+            <appendix>A to T,E,S,T</appendix>
+            <identifier>private.test_1</identifier>
+            <autogen>
+                __KeyToKey__
+                KeyCode::A,
+                KeyCode::B,
+                KeyCode::C,
+                KeyCode::D
+            </autogen>
+        </item>
+</root>
