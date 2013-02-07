@@ -54,13 +54,3 @@ or
 
 4b. Copy the contents of the private.xml to the top of your private.xml
 
-<code>
-    <item>
-        <name>Custom Mappings</name>
-        <include path="mappings/one_handed.xml" />
-        <include path="mappings/numkeys.xml" />
-        <include path="mappings/window_sizing.xml" />
-        <include path="mappings/cursor.xml" />
-        <include path="mappings/spaces.xml" />
-    </item>
-</code>
