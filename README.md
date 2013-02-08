@@ -52,5 +52,5 @@ ln -s <PATH_TO_KR4MB>/private.xml
 
 or
 
-4b. Copy the contents of the private.xml to the top of your private.xml
+4b. Copy the items of this [private.xml](private.xml) to your private.xml
 
