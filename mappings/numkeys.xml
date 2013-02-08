@@ -34,13 +34,24 @@
             <autogen>--KeyToKey-- KeyCode::OPTION_R,  KeyCode::DOT</autogen>
         </item>
         <item>
-            <name>Hold key to use Virtual Numpad</name>
-            <appendix>Hold a modifier key while pressing the letter keys to get the numeric keys.</appendix>
-            <appendix>This is useful for typing quick numbers without having to swith modes.</appendix>
+            <name>Hold key(s) to use Virtual Numpad</name>
+        </item>
             <item>
                 <name>Hold FN to use "Virtual Numpad"</name>
                 <identifier>private.fn_keys_to_virtual_numpad</identifier>
                 <autogen>--KeyToKey-- KeyCode::FN, KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_virtual_numlock_k</autogen>
+            </item>
+            <item>
+                <name>Hold Tab to use "Virtual Numpad"</name>
+                <appen>(+ single press to Tab, + long hold to cancel</appen>
+                <identifier>private.holdtab_to_virtual_numpad</identifier>
+                <autogen>
+                    __KeyOverlaidModifier__ 
+                    KeyCode::TAB,
+                    KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_virtual_numlock_k,
+                    KeyCode::TAB,
+                    KeyCode::VK_NONE
+                </autogen>
             </item>
             <item>
                 <name>FN+SHIFT_L to use "Virtual Numpad"</name>
@@ -120,11 +131,10 @@
                     KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_virtual_numlock_k
                 </autogen>
             </item>
-        </item>
+
         <item>
-            <name>Toggle Numpad</name>
-            <appendix>Use a key/combination to toggle the Virtual Numpad. Once enabled,</appendix>
-            <appendix>pressing the letter keys will be remapped to the numeric keys.</appendix>
+            <name>Press key(s) to turn Virtual Numpad ON/OFF</name>
+        </item>
             <item>
                 <name>Press FN+N to toggle "Virtual NumLock"</name>
                 <identifier>private.fn_n_to_virtual_numlock</identifier>
@@ -135,7 +145,7 @@
                 <identifier>private.fn_sfhit_n_to_virtual_numlock</identifier>
                 <autogen>--KeyToKey-- KeyCode::N, ModifierFlag::FN | ModifierFlag::SHIFT_L, KeyCode::VK_CONFIG_TOGGLE_notsave_virtual_numlock_k</autogen>
             </item>
-        </item>
+
         <item>
             <name>Disable standard numeric keys</name>
             <appendix>This mapping is useful if you're trying to get used to the Virtual Numpad.</appendix>
