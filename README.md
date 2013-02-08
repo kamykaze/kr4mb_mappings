@@ -28,7 +28,7 @@ these mappings to show up on KeyRemap4MacBook:
 1. Get the repo by cloning it to a location of your choice
 
 <pre>
-git clone git@github.com:kamykaze/kr4mb\_mappings.git
+git clone git@github.com:kamykaze/kr4mb_mappings.git
 </pre>
 
 2. Go into KeyRemap4MacBook's private.xml location
@@ -40,14 +40,14 @@ cd ~/Library/Application\ Support/KeyRemap4MacBook
 3. Symlink the mappings folder
 
 <pre>
-ln -s <PATH_TO_KR4MB>/mappings
+ln -s __PATH_TO_KR4MB__/mappings
 </pre>
 
 4a. If you don't have other customizations in your private.xml file, feel free to 
 symlink the private.xml as well
 
 <pre>
-ln -s <PATH_TO_KR4MB>/private.xml
+ln -s __PATH_TO_KR4MB__/private.xml
 </pre>
 
 or
