@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<root>
+    <item>
+        <name>Use Programmer's Keyboard</name>
+        <item>
+            <name>"Quick Symbols" Mode</name>
+            <appendix>The "Quick Symbols" is a mode that allows you to type punctuation keys quickly (very useful</appendix>
+            <appendix>for a programmer).</appendix>
+            <appendix></appendix>
+            <appendix>H J K L ; ' &#8594; ( [ { } ] )</appendix>
+            <appendix>A S D F G &#8594; ! _ - = +</appendix>
+            <identifier vk_config="true">notsave.quick_symbols</identifier>
+            <autogen>--ShowStatusMessage-- Quick Symbols</autogen>
+            <autogen>--KeyToKey-- KeyCode::H,         KeyCode::KEY_9, ModifierFlag::SHIFT_L</autogen>
+            <autogen>--KeyToKey-- KeyCode::J,         KeyCode::BRACKET_LEFT</autogen>
+            <autogen>--KeyToKey-- KeyCode::K,         KeyCode::BRACKET_LEFT, ModifierFlag::SHIFT_L</autogen>
+            <autogen>--KeyToKey-- KeyCode::L,         KeyCode::BRACKET_RIGHT, ModifierFlag::SHIFT_L</autogen>
+            <autogen>--KeyToKey-- KeyCode::SEMICOLON, KeyCode::BRACKET_RIGHT</autogen>
+            <autogen>--KeyToKey-- KeyCode::QUOTE,     KeyCode::KEY_0, ModifierFlag::SHIFT_L</autogen>
+
+            <autogen>--KeyToKey-- KeyCode::A,         KeyCode::KEY_1, ModifierFlag::SHIFT_R</autogen>
+            <autogen>--KeyToKey-- KeyCode::S,         KeyCode::MINUS, ModifierFlag::SHIFT_L</autogen>
+            <autogen>--KeyToKey-- KeyCode::D,         KeyCode::MINUS</autogen>
+            <autogen>--KeyToKey-- KeyCode::F,         KeyCode::EQUAL</autogen>
+            <autogen>--KeyToKey-- KeyCode::G,         KeyCode::EQUAL, ModifierFlag::SHIFT_L</autogen>
+        </item>
+        <item>
+            <name>Hold key(s) to use Virtual Numpad</name>
+        </item>
+            <item>
+                <name>Hold Z to use "Quick Symbols"</name>
+                <identifier>private.z_to_quick_symbols</identifier>
+                <autogen>
+                    __KeyOverlaidModifier__
+                    KeyCode::Z, 
+                    KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_quick_symbols,
+                    KeyCode::Z,
+                    KeyCode::VK_NONE
+                </autogen>
+            </item>
+            <item>
+                <name>Hold \ to use "Quick Symbols"</name>
+                <identifier>private.backslash_to_quick_symbols</identifier>
+                <autogen>
+                    __KeyOverlaidModifier__
+                    KeyCode::BACKSLASH, 
+                    KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_quick_symbols,
+                    KeyCode::BACKSLASH,
+                    KeyCode::VK_NONE
+                </autogen>
+            </item>
+    </item>
+</root>
+

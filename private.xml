@@ -8,5 +8,6 @@
         <include path="mappings/window_sizing.xml" />
         <include path="mappings/cursor.xml" />
         <include path="mappings/spaces.xml" />
+        <include path="mappings/programmer.xml" />
     </item>
 </root>
