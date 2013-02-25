@@ -8,14 +8,14 @@
             <appendix>The "window sizing mode" allows you to resizing the current window to</appendix>
             <appendix>a predefined size and location (you must configure the shortcuts to match).</appendix>
             <appendix> </appendix>
-            <appendix>U I O &#8594; TL     TOP     TR</appendix>
-            <appendix>J K L &#8594; LEFT   CENTER  RIGHT</appendix>
-            <appendix>M , . &#8594; BL     BOTTOM  BR</appendix>
+            <appendix>U I O &#8594; TL (Shift+Opt+Ctrl+&#8592;)   TOP (Cmd+Opt+Ctrl+&#8593;)     TR (Shift+Opt+Ctrl+&#8593;)</appendix>
+            <appendix>J K L &#8594; LEFT (Cmd+Opt+Ctrl+&#8592;)   CTR (Cmd+Opt+Ctrl+C)   RIGHT (Cmd+Opt+Ctrl+&#8594;)</appendix>
+            <appendix>M , . &#8594; BL (Shift+Opt+Ctrl+&#8595;)   BOT (Cmd+Opt+Ctrl+&#8595;)   BR (Shift+Opt+Ctrl+&#8594;)</appendix>
             <appendix></appendix>
-            <appendix>RETURN &#8594; MAXIMIZED</appendix>
-            <appendix>SHIFT_R &#8594; RESTORE</appendix>
-            <appendix>DELETE &#8594; MINIMIZE</appendix>
-            <appendix>SPACE &#8594; NEXT_MONITOR</appendix>
+            <appendix>RETURN &#8594; MAXIMIZED (Cmd+Opt+Ctrl+M)</appendix>
+            <appendix>SHIFT_R &#8594; RESTORE (Cmd+Opt+Ctrl+/)</appendix>
+            <appendix>DELETE &#8594; MINIMIZE (Cmd+M)  Note: Default shortcut, no setup needed</appendix>
+            <appendix>SPACE &#8594; NEXT_MONITOR (Shift+Opt+Ctrl+C)</appendix>
             <appendix></appendix>
             <appendix>Hold W+E to activate "window resizing mode", then press one of the above keys</appendix>
             <identifier vk_config="true">notsave.private_window_resizing_k</identifier>
