@@ -23,6 +23,17 @@
             <appendix>CAPSLOCK &#8594; ' (plus Shift-CAPS &#8594; ")</appendix>
             <appendix>   // Note: In order for CAPSLOCK to work, you need to install</appendix>
             <appendix>   // PCKeyboardHack and map CAPSLOCK to PC Application Key (code 110)</appendix>
+            <appendix></appendix>
+            <name>Right Hand "Mirror Mode"</name>
+            <appendix>-------------</appendix>
+            <appendix>Flips the standard keys on right left side of the keyboard.</appendix>
+            <appendix></appendix>
+            <appendix>P O I U Y  &#8594;  Q W E R T</appendix>
+            <appendix>; L K J H  &#8594;  A S D F G</appendix>
+            <appendix>/ . , M N  &#8594;  Z X C V B</appendix>
+            <appendix></appendix>
+            <appendix>Return &#8594; Tab</appendix>
+            <appendix>Del &#8594; Esc</appendix>
 
             <identifier vk_config="true">notsave.mirror_mode</identifier>
             <!--<autogen>__ShowStatusMessage__ Mirror Mode</autogen>-->
@@ -48,6 +59,28 @@
             <autogen>__KeyToKey__ KeyCode::TAB,           KeyCode::DELETE</autogen>
             <autogen>__KeyToKey__ KeyCode::BACKQUOTE,     KeyCode::ESCAPE</autogen>
             <autogen>__KeyToKey__ KeyCode::PC_APPLICATION,        KeyCode::QUOTE</autogen>
+
+
+            <autogen>__KeyToKey__ KeyCode::P,             KeyCode::Q</autogen>
+            <autogen>__KeyToKey__ KeyCode::O,             KeyCode::W</autogen>
+            <autogen>__KeyToKey__ KeyCode::I,             KeyCode::E</autogen>
+            <autogen>__KeyToKey__ KeyCode::U,             KeyCode::R</autogen>
+            <autogen>__KeyToKey__ KeyCode::Y,             KeyCode::T</autogen>
+
+            <autogen>__KeyToKey__ KeyCode::SEMICOLON,     KeyCode::A</autogen>
+            <autogen>__KeyToKey__ KeyCode::L,             KeyCode::S</autogen>
+            <autogen>__KeyToKey__ KeyCode::K,             KeyCode::D</autogen>
+            <autogen>__KeyToKey__ KeyCode::J,             KeyCode::F</autogen>
+            <autogen>__KeyToKey__ KeyCode::H,             KeyCode::G</autogen>
+
+            <autogen>__KeyToKey__ KeyCode::SLASH,         KeyCode::Z</autogen>
+            <autogen>__KeyToKey__ KeyCode::DOT,           KeyCode::X</autogen>
+            <autogen>__KeyToKey__ KeyCode::COMMA,         KeyCode::C</autogen>
+            <autogen>__KeyToKey__ KeyCode::M,             KeyCode::V</autogen>
+            <autogen>__KeyToKey__ KeyCode::N,             KeyCode::B</autogen>
+
+            <autogen>__KeyToKey__ KeyCode::RETURN,        KeyCode::TAB</autogen>
+            <autogen>__KeyToKey__ KeyCode::DELETE,        KeyCode::ESCAPE</autogen>
             <!--<autogen>__KeyToKey__ KeyCode::PC_APPLICATION, ModifierFlag::SHIFT_L,       KeyCode::QUOTE, ModifierFlag::SHIFT_R</autogen>-->
 
             <block>
@@ -57,22 +90,27 @@
             <block>
                 <config_only>option.mirror_mode_shift2esc</config_only>
                 <autogen>__HoldingKeyToKey__ KeyCode::SHIFT_L, KeyCode::ESCAPE, KeyCode::VK_NONE, KeyCode::SHIFT_L</autogen>
+                <autogen>__HoldingKeyToKey__ KeyCode::SHIFT_R, KeyCode::ESCAPE, KeyCode::VK_NONE, KeyCode::SHIFT_R</autogen>
             </block>
             <block>
-                <config_only>option.mirror_mode_sticky_commandl</config_only>
+                <config_only>option.mirror_mode_sticky_command</config_only>
                 <autogen>__KeyOverlaidModifier__ KeyCode::COMMAND_L, KeyCode::COMMAND_L, KeyCode::VK_STICKY_COMMAND_L</autogen>
+                <autogen>__KeyOverlaidModifier__ KeyCode::COMMAND_R, KeyCode::COMMAND_R, KeyCode::VK_STICKY_COMMAND_R</autogen>
             </block>
             <block>
-                <config_only>option.mirror_mode_sticky_optionl</config_only>
+                <config_only>option.mirror_mode_sticky_option</config_only>
                 <autogen>__KeyOverlaidModifier__ KeyCode::OPTION_L, KeyCode::OPTION_L, KeyCode::VK_STICKY_OPTION_L</autogen>
+                <autogen>__KeyOverlaidModifier__ KeyCode::OPTION_R, KeyCode::OPTION_R, KeyCode::VK_STICKY_OPTION_R</autogen>
             </block>
             <block>
-                <config_only>option.mirror_mode_sticky_controll</config_only>
+                <config_only>option.mirror_mode_sticky_control</config_only>
                 <autogen>__KeyOverlaidModifier__ KeyCode::CONTROL_L, KeyCode::CONTROL_L, KeyCode::VK_STICKY_CONTROL_L</autogen>
+                <autogen>__KeyOverlaidModifier__ KeyCode::CONTROL_R, KeyCode::CONTROL_R, KeyCode::VK_STICKY_CONTROL_R</autogen>
             </block>
             <block>
-                <config_only>option.mirror_mode_sticky_shiftl</config_only>
+                <config_only>option.mirror_mode_sticky_shift</config_only>
                 <autogen>__KeyOverlaidModifier__ KeyCode::SHIFT_L, KeyCode::SHIFT_L, KeyCode::VK_STICKY_SHIFT_L</autogen>
+                <autogen>__KeyOverlaidModifier__ KeyCode::SHIFT_R, KeyCode::SHIFT_R, KeyCode::VK_STICKY_SHIFT_R</autogen>
             </block>
 
         </item>
@@ -110,20 +148,20 @@
                 <identifier>option.mirror_mode_shift2esc</identifier>
             </item>
             <item>
-                <name>Sticky COMMAND_L</name>
-                <identifier>option.mirror_mode_sticky_commandl</identifier>
+                <name>Sticky COMMAND</name>
+                <identifier>option.mirror_mode_sticky_command</identifier>
             </item>
             <item>
-                <name>Sticky OPTION_L</name>
-                <identifier>option.mirror_mode_sticky_optionl</identifier>
+                <name>Sticky OPTION</name>
+                <identifier>option.mirror_mode_sticky_option</identifier>
             </item>
             <item>
-                <name>Sticky CONTROL_L</name>
-                <identifier>option.mirror_mode_sticky_controll</identifier>
+                <name>Sticky CONTROL</name>
+                <identifier>option.mirror_mode_sticky_control</identifier>
             </item>
             <item>
-                <name>Sticky SHIFT_L</name>
-                <identifier>option.mirror_mode_sticky_shiftl</identifier>
+                <name>Sticky SHIFT</name>
+                <identifier>option.mirror_mode_sticky_shift</identifier>
             </item>
         </item>
         <item>
