@@ -7,22 +7,37 @@
             <appendix>The "Quick Symbols" is a mode that allows you to type punctuation keys quickly (very useful</appendix>
             <appendix>for a programmer).</appendix>
             <appendix></appendix>
-            <appendix>H J K L ; ' &#8594; ( [ { } ] )</appendix>
-            <appendix>A S D F G &#8594; ! _ - = +</appendix>
+            <appendix>U I O P &#8594; { } [ ] </appendix>
+            <appendix>H J K L ; ' &#8594; ^ &amp; * ( ) _</appendix>
+            <appendix>A S D F G &#8594; ! @ # $ %</appendix>
+            <appendix>TODO: V B N M &#8594; = = - +</appendix>
+            <appendix>TEST: Q W E R T &#8594; { % % } |</appendix>
             <identifier vk_config="true">notsave.quick_symbols</identifier>
             <autogen>--ShowStatusMessage-- Quick Symbols</autogen>
-            <autogen>--KeyToKey-- KeyCode::H,         KeyCode::KEY_9, ModifierFlag::SHIFT_L</autogen>
-            <autogen>--KeyToKey-- KeyCode::J,         KeyCode::BRACKET_LEFT</autogen>
-            <autogen>--KeyToKey-- KeyCode::K,         KeyCode::BRACKET_LEFT, ModifierFlag::SHIFT_L</autogen>
-            <autogen>--KeyToKey-- KeyCode::L,         KeyCode::BRACKET_RIGHT, ModifierFlag::SHIFT_L</autogen>
-            <autogen>--KeyToKey-- KeyCode::SEMICOLON, KeyCode::BRACKET_RIGHT</autogen>
-            <autogen>--KeyToKey-- KeyCode::QUOTE,     KeyCode::KEY_0, ModifierFlag::SHIFT_L</autogen>
+
+            <autogen>--KeyToKey-- KeyCode::U,         KeyCode::BRACKET_LEFT, ModifierFlag::SHIFT_L</autogen>
+            <autogen>--KeyToKey-- KeyCode::I,         KeyCode::BRACKET_RIGHT, ModifierFlag::SHIFT_L</autogen>
+            <autogen>--KeyToKey-- KeyCode::O,         KeyCode::BRACKET_LEFT</autogen>
+            <autogen>--KeyToKey-- KeyCode::P,         KeyCode::BRACKET_RIGHT</autogen>
+
+            <autogen>--KeyToKey-- KeyCode::H,         KeyCode::KEY_6, ModifierFlag::SHIFT_R</autogen>
+            <autogen>--KeyToKey-- KeyCode::J,         KeyCode::KEY_7, ModifierFlag::SHIFT_L</autogen>
+            <autogen>--KeyToKey-- KeyCode::K,         KeyCode::KEY_8, ModifierFlag::SHIFT_L</autogen>
+            <autogen>--KeyToKey-- KeyCode::L,         KeyCode::KEY_9, ModifierFlag::SHIFT_L</autogen>
+            <autogen>--KeyToKey-- KeyCode::SEMICOLON, KeyCode::KEY_0, ModifierFlag::SHIFT_L</autogen>
+            <autogen>--KeyToKey-- KeyCode::QUOTE,     KeyCode::MINUS, ModifierFlag::SHIFT_L</autogen>
 
             <autogen>--KeyToKey-- KeyCode::A,         KeyCode::KEY_1, ModifierFlag::SHIFT_R</autogen>
-            <autogen>--KeyToKey-- KeyCode::S,         KeyCode::MINUS, ModifierFlag::SHIFT_L</autogen>
-            <autogen>--KeyToKey-- KeyCode::D,         KeyCode::MINUS</autogen>
-            <autogen>--KeyToKey-- KeyCode::F,         KeyCode::EQUAL</autogen>
-            <autogen>--KeyToKey-- KeyCode::G,         KeyCode::EQUAL, ModifierFlag::SHIFT_L</autogen>
+            <autogen>--KeyToKey-- KeyCode::S,         KeyCode::KEY_2, ModifierFlag::SHIFT_L</autogen>
+            <autogen>--KeyToKey-- KeyCode::D,         KeyCode::KEY_3, ModifierFlag::SHIFT_L</autogen>
+            <autogen>--KeyToKey-- KeyCode::F,         KeyCode::KEY_4, ModifierFlag::SHIFT_L</autogen>
+            <autogen>--KeyToKey-- KeyCode::G,         KeyCode::KEY_5, ModifierFlag::SHIFT_L</autogen>
+
+            <autogen>--KeyToKey-- KeyCode::Q,         KeyCode::BRACKET_LEFT, ModifierFlag::SHIFT_L</autogen>
+            <autogen>--KeyToKey-- KeyCode::W,         KeyCode::KEY_5, ModifierFlag::SHIFT_L</autogen>
+            <autogen>--KeyToKey-- KeyCode::E,         KeyCode::KEY_5, ModifierFlag::SHIFT_L</autogen>
+            <autogen>--KeyToKey-- KeyCode::R,         KeyCode::BRACKET_RIGHT, ModifierFlag::SHIFT_L</autogen>
+            <autogen>--KeyToKey-- KeyCode::T,         KeyCode::BACKSLASH, ModifierFlag::SHIFT_L</autogen>
         </item>
         <item>
             <name>Hold key(s) to use Virtual Numpad</name>

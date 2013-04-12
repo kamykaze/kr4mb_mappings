@@ -47,7 +47,7 @@
                 <identifier>private.holdtab_to_virtual_numpad</identifier>
                 <autogen>
                     __KeyOverlaidModifier__ 
-                    KeyCode::TAB,
+                    KeyCode::TAB, ModifierFlag::NONE,
                     KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_virtual_numlock_k,
                     KeyCode::TAB,
                     KeyCode::VK_NONE
