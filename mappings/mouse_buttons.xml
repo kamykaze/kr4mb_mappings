@@ -2,30 +2,287 @@
 <root>
     <item>
         <name>Use Virtual Mouse Buttons</name>
-        <appendix>Use simultaneous keypresses to simulate mouse clicks</appendix>
         <item>
-            <name>[V+C] to LeftClick</name>
-            <identifier>private.simultaneouskeypresses_VC_LeftClick</identifier>
-            <autogen>__SimultaneousKeyPresses__
-                KeyCode::V, KeyCode::C,
-                PointingButton::LEFT
-            </autogen>
+            <appendix>Use simultaneous keypresses to simulate mouse clicks</appendix>
         </item>
         <item>
-            <name>[C+X] to MiddleClick</name>
-            <identifier>private.simultaneouskeypresses_CX_MiddleClick</identifier>
-            <autogen>__SimultaneousKeyPresses__
-                KeyCode::C, KeyCode::X,
-                PointingButton::MIDDLE
-            </autogen>
+            <name>Left Click</name>
+            <item>
+                <name>[Q+W] to LeftClick</name>
+                <identifier>private.simultaneouskeypresses_QW_LeftClick</identifier>
+                <autogen>__SimultaneousKeyPresses__ KeyCode::Q, KeyCode::W, PointingButton::LEFT</autogen>
+            </item>
+            <item>
+                <name>[W+E] to LeftClick</name>
+                <identifier>private.simultaneouskeypresses_WE_LeftClick</identifier>
+                <autogen>__SimultaneousKeyPresses__ KeyCode::W, KeyCode::E, PointingButton::LEFT</autogen>
+            </item>
+            <item>
+                <name>[E+R] to LeftClick</name>
+                <identifier>private.simultaneouskeypresses_ER_LeftClick</identifier>
+                <autogen>__SimultaneousKeyPresses__ KeyCode::E, KeyCode::R, PointingButton::LEFT</autogen>
+            </item>
+            <item>
+                <name>[A+S] to LeftClick</name>
+                <identifier>private.simultaneouskeypresses_AS_LeftClick</identifier>
+                <autogen>__SimultaneousKeyPresses__ KeyCode::A, KeyCode::S, PointingButton::LEFT</autogen>
+            </item>
+            <item>
+                <name>[S+D] to LeftClick</name>
+                <identifier>private.simultaneouskeypresses_SD_LeftClick</identifier>
+                <autogen>__SimultaneousKeyPresses__ KeyCode::S, KeyCode::D, PointingButton::LEFT</autogen>
+            </item>
+            <item>
+                <name>[D+F] to LeftClick</name>
+                <identifier>private.simultaneouskeypresses_DF_LeftClick</identifier>
+                <autogen>__SimultaneousKeyPresses__ KeyCode::D, KeyCode::F, PointingButton::LEFT</autogen>
+            </item>
+            <item>
+                <name>[Z+X] to LeftClick</name>
+                <identifier>private.simultaneouskeypresses_ZX_LeftClick</identifier>
+                <autogen>__SimultaneousKeyPresses__ KeyCode::Z, KeyCode::X, PointingButton::LEFT</autogen>
+            </item>
+            <item>
+                <name>[X+C] to LeftClick</name>
+                <identifier>private.simultaneouskeypresses_XC_LeftClick</identifier>
+                <autogen>__SimultaneousKeyPresses__ KeyCode::X, KeyCode::C, PointingButton::LEFT</autogen>
+            </item>
+            <item>
+                <name>[C+V] to LeftClick</name>
+                <identifier>private.simultaneouskeypresses_CV_LeftClick</identifier>
+                <autogen>__SimultaneousKeyPresses__ KeyCode::C, KeyCode::V, PointingButton::LEFT</autogen>
+            </item>
+            <item>
+                <name>[U+I] to LeftClick</name>
+                <identifier>private.simultaneouskeypresses_UI_LeftClick</identifier>
+                <autogen>__SimultaneousKeyPresses__ KeyCode::U, KeyCode::I, PointingButton::LEFT</autogen>
+            </item>
+            <item>
+                <name>[I+O] to LeftClick</name>
+                <identifier>private.simultaneouskeypresses_IO_LeftClick</identifier>
+                <autogen>__SimultaneousKeyPresses__ KeyCode::I, KeyCode::O, PointingButton::LEFT</autogen>
+            </item>
+            <item>
+                <name>[O+P] to LeftClick</name>
+                <identifier>private.simultaneouskeypresses_OP_LeftClick</identifier>
+                <autogen>__SimultaneousKeyPresses__ KeyCode::O, KeyCode::P, PointingButton::LEFT</autogen>
+            </item>
+            <item>
+                <name>[J+K] to LeftClick</name>
+                <identifier>private.simultaneouskeypresses_JK_LeftClick</identifier>
+                <autogen>__SimultaneousKeyPresses__ KeyCode::J, KeyCode::K, PointingButton::LEFT</autogen>
+            </item>
+            <item>
+                <name>[K+L] to LeftClick</name>
+                <identifier>private.simultaneouskeypresses_KL_LeftClick</identifier>
+                <autogen>__SimultaneousKeyPresses__ KeyCode::K, KeyCode::L, PointingButton::LEFT</autogen>
+            </item>
+            <item>
+                <name>[L+;] to LeftClick</name>
+                <identifier>private.simultaneouskeypresses_LSEMICOLON_LeftClick</identifier>
+                <autogen>__SimultaneousKeyPresses__ KeyCode::L, KeyCode::SEMICOLON, PointingButton::LEFT</autogen>
+            </item>
+            <item>
+                <name>[M+,] to LeftClick</name>
+                <identifier>private.simultaneouskeypresses_MCOMMA_LeftClick</identifier>
+                <autogen>__SimultaneousKeyPresses__ KeyCode::M, KeyCode::COMMA, PointingButton::LEFT</autogen>
+            </item>
+            <item>
+                <name>[,+.] to LeftClick</name>
+                <identifier>private.simultaneouskeypresses_COMMADOT_LeftClick</identifier>
+                <autogen>__SimultaneousKeyPresses__ KeyCode::COMMA, KeyCode::DOT, PointingButton::LEFT</autogen>
+            </item>
+            <item>
+                <name>[.+/] to LeftClick</name>
+                <identifier>private.simultaneouskeypresses_DOTSLASH_LeftClick</identifier>
+                <autogen>__SimultaneousKeyPresses__ KeyCode::DOT, KeyCode::SLASH, PointingButton::LEFT</autogen>
+            </item>
         </item>
         <item>
-            <name>[X+Z] to RightClick</name>
-            <identifier>private.simultaneouskeypresses_XZ_RightClick</identifier>
-            <autogen>__SimultaneousKeyPresses__
-                KeyCode::X, KeyCode::Z,
-                PointingButton::RIGHT
-            </autogen>
+            <name>Right Click</name>
+            <item>
+                <name>[Q+W] to RightClick</name>
+                <identifier>private.simultaneouskeypresses_QW_RightClick</identifier>
+                <autogen>__SimultaneousKeyPresses__ KeyCode::Q, KeyCode::W, PointingButton::RIGHT</autogen>
+            </item>
+            <item>
+                <name>[W+E] to RightClick</name>
+                <identifier>private.simultaneouskeypresses_WE_RightClick</identifier>
+                <autogen>__SimultaneousKeyPresses__ KeyCode::W, KeyCode::E, PointingButton::RIGHT</autogen>
+            </item>
+            <item>
+                <name>[E+R] to RightClick</name>
+                <identifier>private.simultaneouskeypresses_ER_RightClick</identifier>
+                <autogen>__SimultaneousKeyPresses__ KeyCode::E, KeyCode::R, PointingButton::RIGHT</autogen>
+            </item>
+            <item>
+                <name>[A+S] to RightClick</name>
+                <identifier>private.simultaneouskeypresses_AS_RightClick</identifier>
+                <autogen>__SimultaneousKeyPresses__ KeyCode::A, KeyCode::S, PointingButton::RIGHT</autogen>
+            </item>
+            <item>
+                <name>[S+D] to RightClick</name>
+                <identifier>private.simultaneouskeypresses_SD_RightClick</identifier>
+                <autogen>__SimultaneousKeyPresses__ KeyCode::S, KeyCode::D, PointingButton::RIGHT</autogen>
+            </item>
+            <item>
+                <name>[D+F] to RightClick</name>
+                <identifier>private.simultaneouskeypresses_DF_RightClick</identifier>
+                <autogen>__SimultaneousKeyPresses__ KeyCode::D, KeyCode::F, PointingButton::RIGHT</autogen>
+            </item>
+            <item>
+                <name>[Z+X] to RightClick</name>
+                <identifier>private.simultaneouskeypresses_ZX_RightClick</identifier>
+                <autogen>__SimultaneousKeyPresses__ KeyCode::Z, KeyCode::X, PointingButton::RIGHT</autogen>
+            </item>
+            <item>
+                <name>[X+C] to RightClick</name>
+                <identifier>private.simultaneouskeypresses_XC_RightClick</identifier>
+                <autogen>__SimultaneousKeyPresses__ KeyCode::X, KeyCode::C, PointingButton::RIGHT</autogen>
+            </item>
+            <item>
+                <name>[C+V] to RightClick</name>
+                <identifier>private.simultaneouskeypresses_CV_RightClick</identifier>
+                <autogen>__SimultaneousKeyPresses__ KeyCode::C, KeyCode::V, PointingButton::RIGHT</autogen>
+            </item>
+            <item>
+                <name>[U+I] to RightClick</name>
+                <identifier>private.simultaneouskeypresses_UI_RightClick</identifier>
+                <autogen>__SimultaneousKeyPresses__ KeyCode::U, KeyCode::I, PointingButton::RIGHT</autogen>
+            </item>
+            <item>
+                <name>[I+O] to RightClick</name>
+                <identifier>private.simultaneouskeypresses_IO_RightClick</identifier>
+                <autogen>__SimultaneousKeyPresses__ KeyCode::I, KeyCode::O, PointingButton::RIGHT</autogen>
+            </item>
+            <item>
+                <name>[O+P] to RightClick</name>
+                <identifier>private.simultaneouskeypresses_OP_RightClick</identifier>
+                <autogen>__SimultaneousKeyPresses__ KeyCode::O, KeyCode::P, PointingButton::RIGHT</autogen>
+            </item>
+            <item>
+                <name>[J+K] to RightClick</name>
+                <identifier>private.simultaneouskeypresses_JK_RightClick</identifier>
+                <autogen>__SimultaneousKeyPresses__ KeyCode::J, KeyCode::K, PointingButton::RIGHT</autogen>
+            </item>
+            <item>
+                <name>[K+L] to RightClick</name>
+                <identifier>private.simultaneouskeypresses_KL_RightClick</identifier>
+                <autogen>__SimultaneousKeyPresses__ KeyCode::K, KeyCode::L, PointingButton::RIGHT</autogen>
+            </item>
+            <item>
+                <name>[L+;] to RightClick</name>
+                <identifier>private.simultaneouskeypresses_LSEMICOLON_RightClick</identifier>
+                <autogen>__SimultaneousKeyPresses__ KeyCode::L, KeyCode::SEMICOLON, PointingButton::RIGHT</autogen>
+            </item>
+            <item>
+                <name>[M+,] to RightClick</name>
+                <identifier>private.simultaneouskeypresses_MCOMMA_RightClick</identifier>
+                <autogen>__SimultaneousKeyPresses__ KeyCode::M, KeyCode::COMMA, PointingButton::RIGHT</autogen>
+            </item>
+            <item>
+                <name>[,+.] to RightClick</name>
+                <identifier>private.simultaneouskeypresses_COMMADOT_RightClick</identifier>
+                <autogen>__SimultaneousKeyPresses__ KeyCode::COMMA, KeyCode::DOT, PointingButton::RIGHT</autogen>
+            </item>
+            <item>
+                <name>[.+/] to RightClick</name>
+                <identifier>private.simultaneouskeypresses_DOTSLASH_RightClick</identifier>
+                <autogen>__SimultaneousKeyPresses__ KeyCode::DOT, KeyCode::SLASH, PointingButton::RIGHT</autogen>
+            </item>
+        </item>
+        <item>
+            <name>Middle Click</name>
+            <item>
+                <name>[Q+W] to MiddleClick</name>
+                <identifier>private.simultaneouskeypresses_QW_MiddleClick</identifier>
+                <autogen>__SimultaneousKeyPresses__ KeyCode::Q, KeyCode::W, PointingButton::MIDDLE</autogen>
+            </item>
+            <item>
+                <name>[W+E] to MiddleClick</name>
+                <identifier>private.simultaneouskeypresses_WE_MiddleClick</identifier>
+                <autogen>__SimultaneousKeyPresses__ KeyCode::W, KeyCode::E, PointingButton::MIDDLE</autogen>
+            </item>
+            <item>
+                <name>[E+R] to MiddleClick</name>
+                <identifier>private.simultaneouskeypresses_ER_MiddleClick</identifier>
+                <autogen>__SimultaneousKeyPresses__ KeyCode::E, KeyCode::R, PointingButton::MIDDLE</autogen>
+            </item>
+            <item>
+                <name>[A+S] to MiddleClick</name>
+                <identifier>private.simultaneouskeypresses_AS_MiddleClick</identifier>
+                <autogen>__SimultaneousKeyPresses__ KeyCode::A, KeyCode::S, PointingButton::MIDDLE</autogen>
+            </item>
+            <item>
+                <name>[S+D] to MiddleClick</name>
+                <identifier>private.simultaneouskeypresses_SD_MiddleClick</identifier>
+                <autogen>__SimultaneousKeyPresses__ KeyCode::S, KeyCode::D, PointingButton::MIDDLE</autogen>
+            </item>
+            <item>
+                <name>[D+F] to MiddleClick</name>
+                <identifier>private.simultaneouskeypresses_DF_MiddleClick</identifier>
+                <autogen>__SimultaneousKeyPresses__ KeyCode::D, KeyCode::F, PointingButton::MIDDLE</autogen>
+            </item>
+            <item>
+                <name>[Z+X] to MiddleClick</name>
+                <identifier>private.simultaneouskeypresses_ZX_MiddleClick</identifier>
+                <autogen>__SimultaneousKeyPresses__ KeyCode::Z, KeyCode::X, PointingButton::MIDDLE</autogen>
+            </item>
+            <item>
+                <name>[X+C] to MiddleClick</name>
+                <identifier>private.simultaneouskeypresses_XC_MiddleClick</identifier>
+                <autogen>__SimultaneousKeyPresses__ KeyCode::X, KeyCode::C, PointingButton::MIDDLE</autogen>
+            </item>
+            <item>
+                <name>[C+V] to MiddleClick</name>
+                <identifier>private.simultaneouskeypresses_CV_MiddleClick</identifier>
+                <autogen>__SimultaneousKeyPresses__ KeyCode::C, KeyCode::V, PointingButton::MIDDLE</autogen>
+            </item>
+            <item>
+                <name>[U+I] to MiddleClick</name>
+                <identifier>private.simultaneouskeypresses_UI_MiddleClick</identifier>
+                <autogen>__SimultaneousKeyPresses__ KeyCode::U, KeyCode::I, PointingButton::MIDDLE</autogen>
+            </item>
+            <item>
+                <name>[I+O] to MiddleClick</name>
+                <identifier>private.simultaneouskeypresses_IO_MiddleClick</identifier>
+                <autogen>__SimultaneousKeyPresses__ KeyCode::I, KeyCode::O, PointingButton::MIDDLE</autogen>
+            </item>
+            <item>
+                <name>[O+P] to MiddleClick</name>
+                <identifier>private.simultaneouskeypresses_OP_MiddleClick</identifier>
+                <autogen>__SimultaneousKeyPresses__ KeyCode::O, KeyCode::P, PointingButton::MIDDLE</autogen>
+            </item>
+            <item>
+                <name>[J+K] to MiddleClick</name>
+                <identifier>private.simultaneouskeypresses_JK_MiddleClick</identifier>
+                <autogen>__SimultaneousKeyPresses__ KeyCode::J, KeyCode::K, PointingButton::MIDDLE</autogen>
+            </item>
+            <item>
+                <name>[K+L] to MiddleClick</name>
+                <identifier>private.simultaneouskeypresses_KL_MiddleClick</identifier>
+                <autogen>__SimultaneousKeyPresses__ KeyCode::K, KeyCode::L, PointingButton::MIDDLE</autogen>
+            </item>
+            <item>
+                <name>[L+;] to MiddleClick</name>
+                <identifier>private.simultaneouskeypresses_LSEMICOLON_MiddleClick</identifier>
+                <autogen>__SimultaneousKeyPresses__ KeyCode::L, KeyCode::SEMICOLON, PointingButton::MIDDLE</autogen>
+            </item>
+            <item>
+                <name>[M+,] to MiddleClick</name>
+                <identifier>private.simultaneouskeypresses_MCOMMA_MiddleClick</identifier>
+                <autogen>__SimultaneousKeyPresses__ KeyCode::M, KeyCode::COMMA, PointingButton::MIDDLE</autogen>
+            </item>
+            <item>
+                <name>[,+.] to MiddleClick</name>
+                <identifier>private.simultaneouskeypresses_COMMADOT_MiddleClick</identifier>
+                <autogen>__SimultaneousKeyPresses__ KeyCode::COMMA, KeyCode::DOT, PointingButton::MIDDLE</autogen>
+            </item>
+            <item>
+                <name>[.+/] to MiddleClick</name>
+                <identifier>private.simultaneouskeypresses_DOTSLASH_MiddleClick</identifier>
+                <autogen>__SimultaneousKeyPresses__ KeyCode::DOT, KeyCode::SLASH, PointingButton::MIDDLE</autogen>
+            </item>
         </item>
     </item>
 </root>
