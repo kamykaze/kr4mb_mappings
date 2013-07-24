@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<root>
+    <item>
+        <name>Use Virtual Mouse Buttons</name>
+        <appendix>Use simultaneous keypresses to simulate mouse clicks</appendix>
+        <item>
+            <name>[V+C] to LeftClick</name>
+            <identifier>private.simultaneouskeypresses_VC_LeftClick</identifier>
+            <autogen>__SimultaneousKeyPresses__
+                KeyCode::V, KeyCode::C,
+                PointingButton::LEFT
+            </autogen>
+        </item>
+        <item>
+            <name>[C+X] to MiddleClick</name>
+            <identifier>private.simultaneouskeypresses_CX_MiddleClick</identifier>
+            <autogen>__SimultaneousKeyPresses__
+                KeyCode::C, KeyCode::X,
+                PointingButton::MIDDLE
+            </autogen>
+        </item>
+        <item>
+            <name>[X+Z] to RightClick</name>
+            <identifier>private.simultaneouskeypresses_XZ_RightClick</identifier>
+            <autogen>__SimultaneousKeyPresses__
+                KeyCode::X, KeyCode::Z,
+                PointingButton::RIGHT
+            </autogen>
+        </item>
+    </item>
+</root>
+
+
