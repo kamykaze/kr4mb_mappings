@@ -10,8 +10,8 @@
             <appendix>U I O P &#8594; { } [ ] </appendix>
             <appendix>H J K L ; ' &#8594; ^ &amp; * ( ) _</appendix>
             <appendix>A S D F G &#8594; ! @ # $ %</appendix>
-            <appendix>TODO: V B N M &#8594; = = - +</appendix>
-            <appendix>TEST: Q W E R T &#8594; { % % } |</appendix>
+            <appendix>V B N M &#8594; = = - +</appendix>
+            <appendix>Q W E R T &#8594; { % % } |</appendix>
             <identifier vk_config="true">notsave.quick_symbols</identifier>
             <autogen>--ShowStatusMessage-- Quick Symbols</autogen>
 
@@ -38,6 +38,11 @@
             <autogen>--KeyToKey-- KeyCode::E,         KeyCode::KEY_5, ModifierFlag::SHIFT_L</autogen>
             <autogen>--KeyToKey-- KeyCode::R,         KeyCode::BRACKET_RIGHT, ModifierFlag::SHIFT_L</autogen>
             <autogen>--KeyToKey-- KeyCode::T,         KeyCode::BACKSLASH, ModifierFlag::SHIFT_L</autogen>
+
+            <autogen>--KeyToKey-- KeyCode::V,         KeyCode::EQUAL</autogen>
+            <autogen>--KeyToKey-- KeyCode::B,         KeyCode::EQUAL</autogen>
+            <autogen>--KeyToKey-- KeyCode::N,         KeyCode::MINUS</autogen>
+            <autogen>--KeyToKey-- KeyCode::M,         KeyCode::EQUAL, ModifierFlag::SHIFT_L</autogen>
         </item>
         <item>
             <name>Hold key(s) to use Virtual Numpad</name>

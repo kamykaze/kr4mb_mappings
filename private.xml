@@ -3,12 +3,13 @@
     <!--<include path="test.xml" />-->
     <item>
         <name>Custom Mappings</name>
-        <include path="mappings/one_handed.xml" />
+        <!--<include path="mappings/one_handed.xml" />-->
         <include path="mappings/numkeys.xml" />
         <include path="mappings/window_sizing.xml" />
         <include path="mappings/cursor.xml" />
         <include path="mappings/spaces.xml" />
         <include path="mappings/programmer.xml" />
         <include path="mappings/mouse_buttons.xml" />
+        <include path="mappings/injured.xml" />
     </item>
 </root>
