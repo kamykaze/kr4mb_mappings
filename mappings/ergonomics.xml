@@ -43,7 +43,8 @@
                 </autogen>
             </item>
             <item>
-                <name>Hold Hyper to use "Ergonomics Mode"</name>
+                <name>Hold PC Application key to use "Ergonomics Mode"</name>
+                <appendix>+ PC Application only send Escape</appendix>
                 <identifier>private.hyper_to_ergonomics_mode</identifier>
                 <autogen>
                     __KeyOverlaidModifier__
