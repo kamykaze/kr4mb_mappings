@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<root>
+    <item>
+        <name>Use Ergonomics Keyboard</name>
+        <item>
+            <name>"Ergonomics" Mode</name>
+            <appendix>The "Ergonomics" is a mode that allows you to type far reaching keys easily without reaching</appendix>
+            <appendix>for them.</appendix>
+            <appendix></appendix>
+            <appendix>Y  &#8594; FwDelete</appendix>
+            <appendix>H  &#8594; Backspace</appendix>
+            <appendix>N  &#8594; Return </appendix>
+            <identifier vk_config="true">notsave.ergonomics_mode</identifier>
+            <autogen>--ShowStatusMessage-- Ergonomics Mode</autogen>
+
+            <autogen>--KeyToKey-- KeyCode::Y,         KeyCode::DELETE, ModifierFlag::FN</autogen>
+            <autogen>--KeyToKey-- KeyCode::H,         KeyCode::DELETE</autogen>
+            <autogen>--KeyToKey-- KeyCode::N,         KeyCode::RETURN</autogen>
+        </item>
+        <item>
+            <name>Hold key(s) to use Virtual Numpad</name>
+        </item>
+            <item>
+                <name>Hold Z to use "Ergonomics Mode"</name>
+                <identifier>private.z_to_ergonomics_mode</identifier>
+                <autogen>
+                    __KeyOverlaidModifier__
+                    KeyCode::Z, 
+                    KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_ergonomics_mode,
+                    KeyCode::Z,
+                    KeyCode::VK_NONE
+                </autogen>
+            </item>
+            <item>
+                <name>Hold X to use "Ergonomics Mode"</name>
+                <identifier>private.x_to_ergonomics_mode</identifier>
+                <autogen>
+                    __KeyOverlaidModifier__
+                    KeyCode::X, 
+                    KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_ergonomics_mode,
+                    KeyCode::X,
+                    KeyCode::VK_NONE
+                </autogen>
+            </item>
+            <item>
+                <name>Hold Hyper to use "Ergonomics Mode"</name>
+                <identifier>private.hyper_to_ergonomics_mode</identifier>
+                <autogen>
+                    __KeyOverlaidModifier__
+                    KeyCode::PC_APPLICATION,
+                    KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_ergonomics_mode,
+                    KeyCode::ESCAPE
+                </autogen>
+            </item>
+    </item>
+</root>
+

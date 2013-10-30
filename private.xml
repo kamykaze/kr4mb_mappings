@@ -10,6 +10,16 @@
         <include path="mappings/spaces.xml" />
         <include path="mappings/programmer.xml" />
         <include path="mappings/mouse_buttons.xml" />
-        <include path="mappings/injured.xml" />
+        <include path="mappings/ergonomics.xml" />
+    </item>
+    <item>
+        <name>PC Application to Hyper + PC Application only, send secape</name>
+        <identifier>private.PC_to_Hyper_plus_escape</identifier>
+        <autogen>
+            __KeyOverlaidModifier__
+            KeyCode::PC_APPLICATION, 
+            KeyCode::VK_MODIFIER_EXTRA1,Option::SIMULTANEOUSKEYPRESSES_RAW,
+            KeyCode::ESCAPE
+        </autogen>
     </item>
 </root>
