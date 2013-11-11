@@ -10,12 +10,14 @@
             <appendix>Y  &#8594; FwDelete</appendix>
             <appendix>H  &#8594; Backspace</appendix>
             <appendix>N  &#8594; Return </appendix>
+            <appendix>Space  &#8594; Shift+Tab, Shift+Tab </appendix>
             <identifier vk_config="true">notsave.ergonomics_mode</identifier>
             <autogen>--ShowStatusMessage-- Ergonomics Mode</autogen>
 
             <autogen>--KeyToKey-- KeyCode::Y,         KeyCode::DELETE, ModifierFlag::FN</autogen>
             <autogen>--KeyToKey-- KeyCode::H,         KeyCode::DELETE</autogen>
             <autogen>--KeyToKey-- KeyCode::N,         KeyCode::RETURN</autogen>
+            <autogen>--KeyToKey-- KeyCode::SPACE,     KeyCode::TAB, ModifierFlag::SHIFT_L, KeyCode::TAB, ModifierFlag::SHIFT_L</autogen>
         </item>
         <item>
             <name>Hold key(s) to use Virtual Numpad</name>
