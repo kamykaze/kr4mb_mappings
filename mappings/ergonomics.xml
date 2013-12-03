@@ -56,7 +56,7 @@
         <item>
           <name>Show message when using original keys</name>
           <identifier vk_config="true">notsave.ergonomics_warning_mode</identifier>
-          <autogen>--ShowStatusMessage-- AVOID THIS KEY</autogen>
+          <autogen>--ShowStatusMessage-- RSI Warning</autogen>
           <autogen>
               --KeyToKey--
               KeyCode::PC_APPLICATION,
