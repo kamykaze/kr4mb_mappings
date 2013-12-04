@@ -11,11 +11,17 @@
             <appendix>H  &#8594; Backspace</appendix>
             <appendix>N  &#8594; Return </appendix>
             <appendix>Space  &#8594; Shift+Tab, Shift+Tab </appendix>
+            <appendix>J  &#8594; Backspace</appendix>
+            <appendix>K  &#8594; Return </appendix>
+            <appendix>L  &#8594; FwDelete</appendix>
             <identifier vk_config="true">notsave.ergonomics_mode</identifier>
             <autogen>--KeyToKey-- KeyCode::Y,         KeyCode::DELETE, ModifierFlag::FN</autogen>
             <autogen>--KeyToKey-- KeyCode::H,         KeyCode::DELETE</autogen>
             <autogen>--KeyToKey-- KeyCode::N,         KeyCode::RETURN</autogen>
             <autogen>--KeyToKey-- KeyCode::SPACE,     KeyCode::TAB, ModifierFlag::SHIFT_L, KeyCode::TAB, ModifierFlag::SHIFT_L</autogen>
+            <autogen>--KeyToKey-- KeyCode::L,         KeyCode::DELETE, ModifierFlag::FN</autogen>
+            <autogen>--KeyToKey-- KeyCode::J,         KeyCode::DELETE</autogen>
+            <autogen>--KeyToKey-- KeyCode::K,         KeyCode::RETURN</autogen>
         </item>
         <item>
             <name>Hold key(s) to use Ergonomics Mode</name>
@@ -57,11 +63,6 @@
           <name>Show message when using original keys</name>
           <identifier vk_config="true">notsave.ergonomics_warning_mode</identifier>
           <autogen>--ShowStatusMessage-- RSI Warning</autogen>
-          <autogen>
-              --KeyToKey--
-              KeyCode::PC_APPLICATION,
-              KeyCode::VK_CONFIG_FORCE_OFF_notsave_ergonomics_warning_mode
-          </autogen>
           <autogen>
               --KeyToKey--
               KeyCode::ESCAPE,
