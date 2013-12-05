@@ -12,7 +12,6 @@
             <appendix>M , . / &#8594; 1 2 3 ENTER</appendix>
             <appendix>SPACE OPTION_R &#8594; 0 .</appendix>
             <identifier vk_config="true">notsave.virtual_numlock_k</identifier>
-            <autogen>--ShowStatusMessage-- Virtual NumLock</autogen>
             <autogen>--KeyToKey-- KeyCode::SPACE,     KeyCode::KEYPAD_0</autogen>
             <autogen>--KeyToKey-- KeyCode::M,         KeyCode::KEYPAD_1</autogen>
             <autogen>--KeyToKey-- KeyCode::COMMA,     KeyCode::KEYPAD_2</autogen>

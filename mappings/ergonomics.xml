@@ -59,39 +59,77 @@
                     KeyCode::ESCAPE
                 </autogen>
             </item>
-        <item>
-          <name>Show message when using original keys</name>
-          <identifier vk_config="true">notsave.ergonomics_warning_mode</identifier>
-          <autogen>--ShowStatusMessage-- RSI Warning</autogen>
-          <autogen>
-              --KeyToKey--
-              KeyCode::ESCAPE,
-              KeyCode::VK_CONFIG_FORCE_OFF_notsave_ergonomics_warning_mode,
-              KeyCode::ESCAPE
-          </autogen>
-        </item>
-        <item>
-          <name>Enable warning message when using remapped keys</name>
-          <identifier>private.ergonomics_warning_mode</identifier>
-
-          <autogen>
-              --KeyToKey-- 
-              KeyCode::DELETE, ModifierFlag::FN,         
-              KeyCode::VK_CONFIG_FORCE_ON_notsave_ergonomics_warning_mode,
-              KeyCode::DELETE, ModifierFlag::FN
-          </autogen>
-          <autogen>
-              --KeyToKey-- KeyCode::DELETE,
-              KeyCode::VK_CONFIG_FORCE_ON_notsave_ergonomics_warning_mode,
-              KeyCode::DELETE
-          </autogen>
-          <autogen>
-              --KeyToKey--
-              KeyCode::RETURN,
-              KeyCode::VK_CONFIG_FORCE_ON_notsave_ergonomics_warning_mode,
-              KeyCode::RETURN
-          </autogen>
-        </item>
+            <item>
+              <name>Show reminder warning message when using a remapped key</name>
+              <appendix>This is useful to warn you when you're using a key that's </appendix>
+              <appendix>causing you pain.</appendix>
+              <appendix>Hit ESC to clear the warning</appendix>
+                <item>
+                  <name>Show message when using original fn+Del keys</name>
+                  <identifier vk_config="true">notsave.ergonomics_warning_fndel_mode</identifier>
+                  <autogen>--ShowStatusMessage-- RSI: fn Del</autogen>
+                  <autogen>--KeyToKey--
+                              KeyCode::ESCAPE,
+                              KeyCode::VK_CONFIG_FORCE_OFF_notsave_ergonomics_warning_fndel_mode,
+                              KeyCode::VK_CONFIG_FORCE_OFF_notsave_ergonomics_warning_del_mode,
+                              KeyCode::VK_CONFIG_FORCE_OFF_notsave_ergonomics_warning_enter_mode,
+                              KeyCode::ESCAPE
+                  </autogen>
+                </item>
+                <item>
+                  <name>Enable warning message when using remapped keys</name>
+                  <identifier>private.ergonomics_warning_fndel_mode</identifier>
+                  <autogen>
+                      --KeyToKey-- 
+                      KeyCode::DELETE, ModifierFlag::FN,         
+                      KeyCode::VK_CONFIG_FORCE_ON_notsave_ergonomics_warning_fndel_mode,
+                      KeyCode::DELETE, ModifierFlag::FN
+                  </autogen>
+                </item>
+                <item>
+                  <name>Show message when using original Del key</name>
+                  <identifier vk_config="true">notsave.ergonomics_warning_del_mode</identifier>
+                  <autogen>--ShowStatusMessage-- RSI: Del</autogen>
+                  <autogen>--KeyToKey--
+                              KeyCode::ESCAPE,
+                              KeyCode::VK_CONFIG_FORCE_OFF_notsave_ergonomics_warning_fndel_mode,
+                              KeyCode::VK_CONFIG_FORCE_OFF_notsave_ergonomics_warning_del_mode,
+                              KeyCode::VK_CONFIG_FORCE_OFF_notsave_ergonomics_warning_enter_mode,
+                              KeyCode::ESCAPE
+                  </autogen>
+                </item>
+                <item>
+                  <name>Enable warning message when using remapped keys</name>
+                  <identifier>private.ergonomics_warning_del_mode</identifier>
+                  <autogen>
+                      --KeyToKey-- KeyCode::DELETE,
+                      KeyCode::VK_CONFIG_FORCE_ON_notsave_ergonomics_warning_del_mode,
+                     KeyCode::DELETE
+                  </autogen>
+                </item>
+                <item>
+                  <name>Show message when using original Enter key</name>
+                  <identifier vk_config="true">notsave.ergonomics_warning_enter_mode</identifier>
+                  <autogen>--ShowStatusMessage-- RSI: Enter</autogen>
+                  <autogen>--KeyToKey--
+                              KeyCode::ESCAPE,
+                              KeyCode::VK_CONFIG_FORCE_OFF_notsave_ergonomics_warning_fndel_mode,
+                              KeyCode::VK_CONFIG_FORCE_OFF_notsave_ergonomics_warning_del_mode,
+                              KeyCode::VK_CONFIG_FORCE_OFF_notsave_ergonomics_warning_enter_mode,
+                              KeyCode::ESCAPE
+                  </autogen>
+                </item>
+                <item>
+                  <name>Enable warning message when using remapped keys</name>
+                  <identifier>private.ergonomics_warning_enter_mode</identifier>
+                  <autogen>
+                      --KeyToKey--
+                      KeyCode::RETURN,
+                      KeyCode::VK_CONFIG_FORCE_ON_notsave_ergonomics_warning_enter_mode,
+                      KeyCode::RETURN
+                  </autogen>
+                </item>
+            </item>
     </item>
 </root>
 
